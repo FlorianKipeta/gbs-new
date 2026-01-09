@@ -5,26 +5,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ $title ??  'GBS Trusted Company Limited - Air Conditioning, Electrical & Plumbing Services'}}</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     @vite('resources/css/app.css')
 </head>
 
-<body class="font-sans">
+<body class="font-sans" x-data="{ mobileMenuOpen: false }">
 
 <header id="site-header" class="fixed top-0 w-full z-50 bg-white shadow-md transition duration-300">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <nav class="flex items-center justify-between h-20 lg:py-0">
-            <h1><a class="text-2xl font-bold" href={{route('welcome')}}>
+            <h1><a class="text-2xl font-bold" href="{{route('welcome')}}">
                     <img src="images/gbs-logo.jpg" alt="GBS Logo" class="h-20">
                     {{--                    <span class="text-primary-600">GBS</span> Trusted--}}
                 </a></h1>
 
-            <button class="lg:hidden p-2" type="button" data-collapse-toggle="navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="lg:hidden p-2" type="button" @click="mobileMenuOpen = !mobileMenuOpen" aria-label="Toggle navigation">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
 
-            <div class="hidden lg:flex lg:items-center lg:w-auto" id="navbarScroll">
+            <div :class="mobileMenuOpen ? 'block' : 'hidden'" class="lg:flex lg:items-center lg:w-auto absolute lg:static top-20 left-0 w-full bg-white lg:bg-transparent shadow-lg lg:shadow-none px-4 lg:px-0" id="navbarScroll">
                 <ul class="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-8 mx-auto my-2 lg:my-0">
                     <li class="nav-item">
                         <a

@@ -11,7 +11,7 @@
                     </div>
                     <div>
                         <ul class="flex space-x-2 text-sm text-gray-600">
-                            <li><a href={{route('welcome')}} class="hover:text-primary-500">Home</a></li>
+                            <li><a href="{{route('welcome')}}" class="hover:text-primary-500">Home</a></li>
                             <li class="text-gray-400">
                                 <span class="mx-2">/</span> Contact Us
                             </li>
@@ -31,22 +31,35 @@
                     <p class="text-gray-600">For emergency repairs, service bookings, or free quotes, fill out the form below. We respond promptly!</p>
                 </div>
 
-                <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="bg-gray-50 p-8 rounded-xl shadow-lg">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-                        <div class="space-y-4">
-                            <input type="text" name="w3lName" id="w3lName" placeholder="Name" required="" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600">
-                            <input type="number" name="w3lPhone" placeholder="Your phone number" required="" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600">
-                            <input type="email" name="w3lSender" id="w3lSender" placeholder="Email*" required="" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600">
-                            <input type="text" name="w3lSubject" placeholder="Subject (e.g., AC Repair, Quote Request)" required="" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600">
+                <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Your Name</label>
+                                <input type="text" name="w3lName" id="w3lName" placeholder="Full Name" required="" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Phone Number</label>
+                                <input type="number" name="w3lPhone" placeholder="+255..." required="" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Email Address</label>
+                                <input type="email" name="w3lSender" id="w3lSender" placeholder="email@example.com" required="" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Subject</label>
+                                <input type="text" name="w3lSubject" placeholder="How can we help?" required="" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
+                            </div>
                         </div>
-                        <div>
-                            <textarea name="w3lMessage" id="w3lMessage" placeholder="Message (Please describe your service need, location, and preferred time.)*" required="" rows="8" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600"></textarea>
+                        <div class="flex flex-col">
+                            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Your Message</label>
+                            <textarea name="w3lMessage" id="w3lMessage" placeholder="Describe your service need, location, and preferred time..." required="" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all flex-grow min-h-[300px]"></textarea>
                         </div>
                     </div>
 
-                    <div class="text-center lg:text-right">
-                        <button type="submit" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-bold rounded-lg shadow-lg text-white bg-primary-600 hover:bg-primary-700 transition duration-300">
-                            Submit Now <i class="fas fa-paper-plane ml-2"></i>
+                    <div class="text-center md:text-right">
+                        <button type="submit" class="w-full md:w-auto inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-bold rounded-xl shadow-lg text-white bg-primary-600 hover:bg-primary-700 transition duration-300">
+                            Submit Now <i class="fas fa-paper-plane ml-3"></i>
                         </button>
                     </div>
                 </form>
@@ -57,35 +70,41 @@
     <section id="contact-details" class="py-16 md:py-24 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
-                    <div class="w-16 h-16 flex items-center justify-center bg-primary-600 text-white rounded-full text-2xl mb-4">
+                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center border border-gray-100">
+                    <div class="w-20 h-20 flex items-center justify-center bg-primary-50 text-primary-600 rounded-2xl text-3xl mb-6">
                         <span class="fas fa-map-marked-alt"></span>
                     </div>
-                    <div class="text-box">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Our Location</h3>
-                        <p class="text-gray-600"><strong>GBS Trusted Company Limited</strong>, P.O Box 18009, Mwenge, Dar es salaam, Tanzania.</p>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Location</h3>
+                        <p class="text-gray-600 leading-relaxed"><strong>GBS Trusted Company Limited</strong><br>P.O Box 18009, Mwenge,<br>Dar es salaam, Tanzania.</p>
                     </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
-                    <div class="w-16 h-16 flex items-center justify-center bg-primary-600 text-white rounded-full text-2xl mb-4">
+                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center border border-gray-100">
+                    <div class="w-20 h-20 flex items-center justify-center bg-primary-50 text-primary-600 rounded-2xl text-3xl mb-6">
                         <span class="fas fa-phone-alt"></span>
                     </div>
-                    <div class="text-box">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Give us a call (24/7)</h3>
-                        <p><a href="tel:+255789415238" class="text-primary-600 hover:text-primary-700 font-medium">+255 789 415238 (Main)</a></p>
-                        <p><a href="tel:+255655415238" class="text-primary-600 hover:text-primary-700 font-medium">+255 655 415238 (Support)</a></p>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Give us a call</h3>
+                        <p class="text-gray-400 text-sm mb-4 uppercase font-bold tracking-widest">Available 24/7</p>
+                        <div class="space-y-2">
+                            <p><a href="tel:+255789415238" class="text-xl text-primary-600 hover:text-primary-700 font-bold transition-colors">+255 789 415238</a></p>
+                            <p><a href="tel:+255655415238" class="text-lg text-gray-600 hover:text-primary-600 font-medium transition-colors">+255 655 415238</a></p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
-                    <div class="w-16 h-16 flex items-center justify-center bg-primary-600 text-white rounded-full text-2xl mb-4">
+                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center border border-gray-100">
+                    <div class="w-20 h-20 flex items-center justify-center bg-primary-50 text-primary-600 rounded-2xl text-3xl mb-6">
                         <span class="fas fa-envelope-open-text"></span>
                     </div>
-                    <div class="text-box">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Help Desk</h3>
-                        <p> <a href="mailto:info@gbstrusted.co.tz" class="text-primary-600 hover:text-primary-700 font-medium">info@gbstrusted.co.tz (General Inquiries)</a></p>
-                        <p> <a href="mailto:bottosahali4@gmail.com" class="text-primary-600 hover:text-primary-700 font-medium">bottosahali4@gmail.com (Urgent)</a></p>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Help Desk</h3>
+                        <p class="text-gray-400 text-sm mb-4 uppercase font-bold tracking-widest">Email Us Anytime</p>
+                        <div class="space-y-2">
+                            <p><a href="mailto:info@gbstrusted.co.tz" class="text-lg text-primary-600 hover:text-primary-700 font-bold transition-colors">info@gbstrusted.co.tz</a></p>
+                            <p><a href="mailto:bottosahali4@gmail.com" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">bottosahali4@gmail.com</a></p>
+                        </div>
                     </div>
                 </div>
             </div>

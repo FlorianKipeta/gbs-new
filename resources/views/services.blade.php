@@ -11,7 +11,7 @@
                     </div>
                     <div>
                         <ul class="flex space-x-2 text-sm text-gray-600">
-                            <li><a href={{route('welcome')}} class="hover:text-primary-500">Home</a></li>
+                            <li><a href="{{route('welcome')}}" class="hover:text-primary-500">Home</a></li>
                             <li class="text-gray-400">
                                 <span class="mx-2">/</span> Services
                             </li>
@@ -94,63 +94,98 @@
 
     <section id="services1" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 max-w-3xl mx-auto">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
                 <p class="text-primary-600 text-lg font-semibold mb-2 uppercase tracking-wide">Our Expertise</p>
-                <h3 class="text-4xl font-bold text-gray-800">Technical Services Offered</h3>
+                <h3 class="text-4xl md:text-5xl font-bold text-gray-800">Technical Services Offered</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-6 bg-gray-50 rounded-xl shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300">
-                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary-600 text-white rounded-full text-xl">
+                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                         <i class="fas fa-fan" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-primary-600 transition duration-300"><a href="#feature">Air Conditioning (HVAC)</a></h4>
-                        <p class="text-gray-600 text-sm">Installation, maintenance, and repair of all AC types (Split, Cassette, Central) for optimal cooling and heating.</p>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">Air Conditioning (HVAC)</h4>
+                        <p class="text-gray-600 leading-relaxed">Installation, maintenance, and repair of all AC types (Split, Cassette, Central) for optimal cooling and heating performance.</p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> New Installations</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Preventive Maintenance</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Emergency Repairs</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-xl shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300">
-                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary-600 text-white rounded-full text-xl">
+
+                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                         <i class="fas fa-bolt" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-primary-600 transition duration-300"><a href="#feature">Electrical Systems</a></h4>
-                        <p class="text-gray-600 text-sm">Wiring, fault finding, circuit breaker installation, lighting design, and residential/commercial power solutions.</p>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">Electrical Systems</h4>
+                        <p class="text-gray-600 leading-relaxed">Wiring, fault finding, circuit breaker installation, lighting design, and residential/commercial power solutions.</p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Building Wiring</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Panel Upgrades</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Lighting Solutions</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-xl shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300">
-                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary-600 text-white rounded-full text-xl">
+
+                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                         <i class="fas fa-faucet" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-primary-600 transition duration-300"><a href="#feature">Plumbing Services</a></h4>
-                        <p class="text-gray-600 text-sm">Pipe repair, fixture installation, water heater service, drain cleaning, and general plumbing maintenance.</p>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">Plumbing Services</h4>
+                        <p class="text-gray-600 leading-relaxed">Pipe repair, fixture installation, water heater service, drain cleaning, and general plumbing maintenance.</p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> 24/7 Emergencies</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Leak Detection</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Water Heaters</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-xl shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300">
-                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary-600 text-white rounded-full text-xl">
+
+                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                         <i class="fas fa-video" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-primary-600 transition duration-300"><a href="#feature">CCTV & Surveillance</a></h4>
-                        <p class="text-gray-600 text-sm">Installation and configuration of advanced CCTV cameras and surveillance systems for ultimate security.</p>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">CCTV & Surveillance</h4>
+                        <p class="text-gray-600 leading-relaxed">Installation and configuration of advanced CCTV cameras and surveillance systems for ultimate security.</p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> IP Cameras</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Remote Access</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> DVR/NVR Setup</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-xl shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300">
-                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary-600 text-white rounded-full text-xl">
+
+                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                         <i class="fas fa-lock" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-primary-600 transition duration-300"><a href="#feature">Electric Fencing</a></h4>
-                        <p class="text-gray-600 text-sm">Design, installation, and maintenance of perimeter electric fences for enhanced property protection.</p>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">Electric Fencing</h4>
+                        <p class="text-gray-600 leading-relaxed">Design, installation, and maintenance of perimeter electric fences for enhanced property protection.</p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Legal Compliance</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Alarm Integration</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Periodic Testing</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-xl shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300">
-                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary-600 text-white rounded-full text-xl">
+
+                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                         <i class="fas fa-toolbox" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-primary-600 transition duration-300"><a href="#feature">General Maintenance</a></h4>
-                        <p class="text-gray-600 text-sm">Full property maintenance, including minor structural repairs, painting, and general handyman services.</p>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">General Maintenance</h4>
+                        <p class="text-gray-600 leading-relaxed">Full property maintenance, including minor structural repairs, painting, and general handyman services.</p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Handyman Services</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Painting & Decor</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Annual Contracts</li>
+                        </ul>
                     </div>
                 </div>
             </div>
