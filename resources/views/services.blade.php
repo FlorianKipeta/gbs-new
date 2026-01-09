@@ -27,7 +27,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 items-center">
 
                 <div class="lg:col-span-1 mb-8 lg:mb-0">
-                    <img src="images/gbs-02.jpeg" alt="Technician working on a building system" class="img-fluid rounded-xl shadow-2xl w-full h-auto object-cover">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop" alt="Technician working on a building system" class="img-fluid rounded-xl shadow-2xl w-full h-auto object-cover">
                 </div>
 
                 <div class="lg:col-span-1">
@@ -68,21 +68,21 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <img src="images/gbs-02.jpeg" alt="Technician with tools" class="w-full h-56 object-cover">
+                    <img src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?q=80&w=2070&auto=format&fit=crop" alt="Technician with tools" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-primary-600 transition duration-300"><a href="#feature">24/7 Emergency Service</a></h4>
                         <p class="text-gray-600">We are available around the clock to handle your urgent AC, electrical, or plumbing breakdowns.</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <img src="images/gbs-02.jpeg" alt="Quote pad" class="w-full h-56 object-cover">
+                    <img src="https://images.unsplash.com/photo-1454165833767-027eeea15c3e?q=80&w=2070&auto=format&fit=crop" alt="Quote pad" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-primary-600 transition duration-300"><a href="#feature">Free Consultation & Quote</a></h4>
                         <p class="text-gray-600">Get a no-obligation, accurate, and transparent quote for any installation or major repair work.</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <img src="images/gbs-02.jpeg" alt="Certified technician" class="w-full h-56 object-cover">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop" alt="Certified technician" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-primary-600 transition duration-300"><a href="#feature">Certified Experts</a></h4>
                         <p class="text-gray-600">All our services are delivered by highly trained, licensed, and friendly technicians.</p>

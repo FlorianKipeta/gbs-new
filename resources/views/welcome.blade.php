@@ -3,9 +3,9 @@
     <section id="home" class="relative pt-20" x-data="{
         activeSlide: 0,
         slides: [
-            { image: 'images/gbs-03.jpeg', title: 'Guaranteed Comfort Everywhere in Tanzania.', subtitle: 'Providing top-notch solutions in AC, Electrical, and Plumbing services across the nation since 2019.' },
-            { image: 'images/gbs-02.jpeg', title: 'Professional Infrastructure Projects.', subtitle: 'Comprehensive services for properties, hotels, and telecommunication hubs.' },
-            { image: 'images/gbs-04.jpeg', title: 'Expert Technical Solutions 24/7.', subtitle: 'Our skilled technicians are ready to handle your most critical needs anywhere in Tanzania.' }
+            { image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop', title: 'Guaranteed Comfort Everywhere in Tanzania.', subtitle: 'Providing top-notch solutions in AC, Electrical, and Plumbing services across the nation since 2019.' },
+            { image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ecb?q=80&w=2070&auto=format&fit=crop', title: 'Professional Infrastructure Projects.', subtitle: 'Comprehensive services for properties, hotels, and telecommunication hubs.' },
+            { image: 'https://images.unsplash.com/photo-1558389186-438424b00a32?q=80&w=2070&auto=format&fit=crop', title: 'Expert Technical Solutions 24/7.', subtitle: 'Our skilled technicians are ready to handle your most critical needs anywhere in Tanzania.' }
         ],
         next() { this.activeSlide = (this.activeSlide + 1) % this.slides.length },
         prev() { this.activeSlide = (this.activeSlide - 1 + this.slides.length) % this.slides.length },
@@ -283,7 +283,7 @@
                 <!-- Project 1: Azure Properties -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="images/gbs-02.jpeg" alt="Azure Properties Zanzibar" class="w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="Azure Properties Zanzibar" class="w-full h-full object-cover">
                         <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2024</div>
                     </div>
                     <div class="p-6 flex-grow">
@@ -301,7 +301,7 @@
                 <!-- Project 2: Halotel Towers -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="images/gbs-03.jpeg" alt="Halotel Arusha & Tanga" class="w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1454165833767-027eeea15c3e?q=80&w=2070&auto=format&fit=crop" alt="Halotel Arusha & Tanga" class="w-full h-full object-cover">
                         <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2023</div>
                     </div>
                     <div class="p-6 flex-grow">
@@ -318,7 +318,7 @@
                 <!-- Project 3: The Power Villa -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="images/gbs-04.jpeg" alt="The Power Villa Zanzibar" class="w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop" alt="The Power Villa Zanzibar" class="w-full h-full object-cover">
                         <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2022</div>
                     </div>
                     <div class="p-6 flex-grow">
@@ -335,7 +335,7 @@
                 <!-- Project 4: Popex Hotel -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="images/gbs-05.jpeg" alt="Popex Hotel Dar es Salaam" class="w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop" alt="Popex Hotel Dar es Salaam" class="w-full h-full object-cover">
                         <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2023</div>
                     </div>
                     <div class="p-6 flex-grow">
@@ -352,7 +352,7 @@
                 <!-- Project 5: Sky Bar Paje -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="images/gbs-06.jpeg" alt="Sky Bar Paje Zanzibar" class="w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop" alt="Sky Bar Paje Zanzibar" class="w-full h-full object-cover">
                         <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2022</div>
                     </div>
                     <div class="p-6 flex-grow">
