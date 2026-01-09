@@ -1,5 +1,9 @@
 <!-- resources/views/tasks.blade.php -->
-<x-layout>
+<x-layout
+    title="Our Services - GBS Trusted Company Limited Solutions"
+    description="Comprehensive technical services including AC installation, repair, and maintenance, plumbing, electrical systems, CCTV security, and electric fencing nationwide in Tanzania."
+    keywords="AC Repair Dar es Salaam, Electric Fencing Tanzania, CCTV Installation Zanzibar, Plumbing Services Tanzania, HVACR Solutions, Equipment Trading"
+>
     <div class="pt-20 bg-gray-100">
         <section class="py-12 sm:py-20">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">

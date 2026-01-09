@@ -1,5 +1,9 @@
 <!-- resources/views/tasks.blade.php -->
-<x-layout>
+<x-layout
+    title="Contact Us - GBS Trusted Company Limited Technical Support"
+    description="Contact GBS Trusted Company Limited for emergency AC repairs, plumbing, electrical services, or free quotes. We serve Dar es Salaam, Zanzibar, and all of Tanzania 24/7."
+    keywords="Contact GBS Trusted, AC Repair Tanzania Phone, GBS Location Dar es Salaam, Emergency Plumber Tanzania, CCTV Support"
+>
     <div class="pt-20 bg-gray-100">
         <section class="py-12 sm:py-20">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">

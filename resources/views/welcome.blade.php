@@ -1,5 +1,9 @@
 <!-- resources/views/tasks.blade.php -->
-<x-layout>
+<x-layout
+    title="GBS Trusted Company Limited - Guaranteed Comfort Nationwide"
+    description="Professional AC installation, plumbing, electrical wiring, and security systems in Tanzania. Expert solutions for homes, industries, and commercial properties."
+    keywords="AC Installation Tanzania, Electrical Wiring Dar es Salaam, Plumbing Zanzibar, CCTV Security, GBS Trusted Company, HVAC Tanzania"
+>
     <section id="home" class="relative pt-20" x-data="{
         activeSlide: 0,
         slides: [

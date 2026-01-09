@@ -1,5 +1,9 @@
 <!-- resources/views/tasks.blade.php -->
-<x-layout>
+<x-layout
+    title="About Us - GBS Trusted Company Limited"
+    description="Learn about GBS Trusted Company Limited, our history since 2019, our mission, vision, and the professional management team behind our technical excellence in Tanzania."
+    keywords="About GBS Trusted, Gerald Davis CEO, Engineering Services Tanzania, BRELA 154573453, Technical Experts Tanzania"
+>
     <div class="pt-20 bg-gray-100">
         <section class="py-12 sm:py-20">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
