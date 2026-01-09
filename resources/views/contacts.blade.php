@@ -76,7 +76,7 @@
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Location</h3>
-                        <p class="text-gray-600 leading-relaxed"><strong>GBS Trusted Company Limited</strong><br>P.O Box 18009, Mwenge,<br>Dar es salaam, Tanzania.</p>
+                        <p class="text-gray-600 leading-relaxed"><strong>GBS Trusted Company Limited</strong><br>P.O Box 18009, Makumbusho-Kinondoni,<br>Dar es salaam, Tanzania.</p>
                     </div>
                 </div>
 
@@ -88,8 +88,8 @@
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Give us a call</h3>
                         <p class="text-gray-400 text-sm mb-4 uppercase font-bold tracking-widest">Available 24/7</p>
                         <div class="space-y-2">
-                            <p><a href="tel:+255789415238" class="text-xl text-primary-600 hover:text-primary-700 font-bold transition-colors">+255 789 415238</a></p>
-                            <p><a href="tel:+255655415238" class="text-lg text-gray-600 hover:text-primary-600 font-medium transition-colors">+255 655 415238</a></p>
+                            <p><a href="tel:+255787858011" class="text-xl text-primary-600 hover:text-primary-700 font-bold transition-colors">+255 787 858011</a></p>
+                            <p><a href="tel:+255789415238" class="text-lg text-gray-600 hover:text-primary-600 font-medium transition-colors">+255 789 415238</a></p>
                         </div>
                     </div>
                 </div>
@@ -102,8 +102,8 @@
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">Help Desk</h3>
                         <p class="text-gray-400 text-sm mb-4 uppercase font-bold tracking-widest">Email Us Anytime</p>
                         <div class="space-y-2">
-                            <p><a href="mailto:info@gbstrusted.co.tz" class="text-lg text-primary-600 hover:text-primary-700 font-bold transition-colors">info@gbstrusted.co.tz</a></p>
-                            <p><a href="mailto:bottosahali4@gmail.com" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">bottosahali4@gmail.com</a></p>
+                            <p><a href="mailto:domisahali@gmail.com" class="text-lg text-primary-600 hover:text-primary-700 font-bold transition-colors">domisahali@gmail.com</a></p>
+                            <p><a href="mailto:info@gbstrusted.co.tz" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">info@gbstrusted.co.tz</a></p>
                         </div>
                     </div>
                 </div>

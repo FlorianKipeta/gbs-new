@@ -99,92 +99,137 @@
                 <h3 class="text-4xl md:text-5xl font-bold text-gray-800">Technical Services Offered</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AC Installation -->
                 <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                         <i class="fas fa-fan" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-4">Air Conditioning (HVAC)</h4>
-                        <p class="text-gray-600 leading-relaxed">Installation, maintenance, and repair of all AC types (Split, Cassette, Central) for optimal cooling and heating performance.</p>
-                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> New Installations</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Preventive Maintenance</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Emergency Repairs</li>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">AC Installation</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Professional AC installation and replacement for homes, industries, and commercial buildings. We handle central air, ductless mini-splits, and more.</p>
+                        <ul class="space-y-2 text-xs text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> High-efficiency units</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Expert ductwork upgrades</li>
                         </ul>
                     </div>
                 </div>
 
+                <!-- AC Repair -->
                 <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
-                        <i class="fas fa-bolt" aria-hidden="true"></i>
+                        <i class="fas fa-tools" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-4">Electrical Systems</h4>
-                        <p class="text-gray-600 leading-relaxed">Wiring, fault finding, circuit breaker installation, lighting design, and residential/commercial power solutions.</p>
-                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Building Wiring</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Panel Upgrades</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Lighting Solutions</li>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">AC Repair</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Fast and reliable AC repair services. Certified technicians available 24/7 for emergency support and same-day repairs.</p>
+                        <ul class="space-y-2 text-xs text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Frozen coils & leaks</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Thermostat malfunctions</li>
                         </ul>
                     </div>
                 </div>
 
+                <!-- AC Maintenance -->
+                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
+                        <i class="fas fa-sync" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">AC Maintenance</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Keep your AC running efficiently. We offer thorough inspections, tune-ups, and cleaning to extend your system's lifespan.</p>
+                        <ul class="space-y-2 text-xs text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Filter & coil cleaning</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Refrigerant checks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Plumbing -->
                 <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                         <i class="fas fa-faucet" aria-hidden="true"></i>
                     </div>
                     <div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">Plumbing Services</h4>
-                        <p class="text-gray-600 leading-relaxed">Pipe repair, fixture installation, water heater service, drain cleaning, and general plumbing maintenance.</p>
-                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> 24/7 Emergencies</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Leak Detection</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Water Heaters</li>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">From leaky faucets to complex setups. Certified plumbers for residential, commercial, and industrial areas.</p>
+                        <ul class="space-y-2 text-xs text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> 24/7 emergency repairs</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Sewer & drain cleaning</li>
                         </ul>
                     </div>
                 </div>
 
+                <!-- Electrical -->
+                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
+                        <i class="fas fa-bolt" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">Electrical Services</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Knowledgeable, qualified, and licensed technicians for design, installation, and maintenance of all electrical systems.</p>
+                        <ul class="space-y-2 text-xs text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Home & industrial wiring</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Power line transmission</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CCTV & Security -->
                 <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                         <i class="fas fa-video" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-4">CCTV & Surveillance</h4>
-                        <p class="text-gray-600 leading-relaxed">Installation and configuration of advanced CCTV cameras and surveillance systems for ultimate security.</p>
-                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> IP Cameras</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Remote Access</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> DVR/NVR Setup</li>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">CCTV & Security</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Design, planning, installation, and repair of security systems. Hikvision, Dahua, Bosch, and other leading brands.</p>
+                        <ul class="space-y-2 text-xs text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Access control & Alarms</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Turnkey security projects</li>
                         </ul>
                     </div>
                 </div>
 
+                <!-- Electric Fencing -->
                 <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
-                        <i class="fas fa-lock" aria-hidden="true"></i>
+                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
                     </div>
                     <div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">Electric Fencing</h4>
-                        <p class="text-gray-600 leading-relaxed">Design, installation, and maintenance of perimeter electric fences for enhanced property protection.</p>
-                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Legal Compliance</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Alarm Integration</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Periodic Testing</li>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Strong perimeter security barrier with high-voltage pulses. Energy-efficient, cost-effective, and durable protection.</p>
+                        <ul class="space-y-2 text-xs text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Intrusion detection alarm</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Residential & Industrial</li>
                         </ul>
                     </div>
                 </div>
 
+                <!-- HVACR -->
                 <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
-                        <i class="fas fa-toolbox" aria-hidden="true"></i>
+                        <i class="fas fa-thermometer-half" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-4">General Maintenance</h4>
-                        <p class="text-gray-600 leading-relaxed">Full property maintenance, including minor structural repairs, painting, and general handyman services.</p>
-                        <ul class="mt-4 space-y-2 text-sm text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Handyman Services</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Painting & Decor</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2 text-xs"></i> Annual Contracts</li>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">HVACR Solutions</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Heating, ventilation, and refrigeration system technology for maintaining indoor air quality and thermal comfort.</p>
+                        <ul class="space-y-2 text-xs text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Industrial refrigeration</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Thermal comfort control</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Equipment Trading -->
+                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">Equipment Trading</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">We supply high-quality products from the biggest manufacturers and trusted brands in the industry.</p>
+                        <ul class="space-y-2 text-xs text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Genuine spare parts</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Quality brand partners</li>
                         </ul>
                     </div>
                 </div>

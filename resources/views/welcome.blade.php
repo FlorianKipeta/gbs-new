@@ -3,9 +3,9 @@
     <section id="home" class="relative pt-20" x-data="{
         activeSlide: 0,
         slides: [
-            { image: 'images/gbs-03.jpeg', title: 'Your Trusted Partner in AC, Electrical & Plumbing.', subtitle: 'Providing top-notch solutions to homes and businesses in Dar es Salaam and Zanzibar since 2019.' },
-            { image: 'images/gbs-02.jpeg', title: 'Guaranteed Comfort for Your Home.', subtitle: 'Reliable air conditioning services to keep you cool all year round.' },
-            { image: 'images/gbs-04.jpeg', title: 'Expert Electrical & Plumbing Solutions.', subtitle: 'Certified technicians ready to handle your most critical needs 24/7.' }
+            { image: 'images/gbs-03.jpeg', title: 'Guaranteed Comfort Everywhere in Tanzania.', subtitle: 'Providing top-notch solutions in AC, Electrical, and Plumbing services across the nation since 2019.' },
+            { image: 'images/gbs-02.jpeg', title: 'Professional Infrastructure Projects.', subtitle: 'Comprehensive services for properties, hotels, and telecommunication hubs.' },
+            { image: 'images/gbs-04.jpeg', title: 'Expert Technical Solutions 24/7.', subtitle: 'Our skilled technicians are ready to handle your most critical needs anywhere in Tanzania.' }
         ],
         next() { this.activeSlide = (this.activeSlide + 1) % this.slides.length },
         prev() { this.activeSlide = (this.activeSlide - 1 + this.slides.length) % this.slides.length },
@@ -30,11 +30,11 @@
                             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4" x-text="slide.title"></h1>
                             <p class="text-xl opacity-90 mb-8 max-w-2xl" x-text="slide.subtitle"></p>
                             <div class="flex flex-wrap gap-4">
-                                <a href="{{route('about')}}" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-lg text-white bg-primary-600 hover:bg-primary-700 transition duration-300">
-                                    Read More <i class="fas fa-angle-double-right ml-2"></i>
+                                <a href="#projects" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-lg text-white bg-primary-600 hover:bg-primary-700 transition duration-300">
+                                    Learn More <i class="fas fa-angle-double-right ml-2"></i>
                                 </a>
-                                <a href="{{route('services')}}" class="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-lg shadow-lg text-white hover:bg-white hover:text-gray-900 transition duration-300">
-                                    Our Services
+                                <a href="{{route('contacts')}}" class="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-lg shadow-lg text-white hover:bg-white hover:text-gray-900 transition duration-300">
+                                    Contact Us
                                 </a>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div class="p-6 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
-                    <p class="text-4xl md:text-5xl font-extrabold mb-1">5+</p>
+                    <p class="text-4xl md:text-5xl font-extrabold mb-1">6+</p>
                     <p class="uppercase text-xs font-semibold opacity-80">Years in Business</p>
                 </div>
                 <div class="p-6 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
@@ -73,28 +73,31 @@
                     <p class="uppercase text-xs font-semibold opacity-80">Client Satisfaction</p>
                 </div>
                 <div class="p-6 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
-                    <p class="text-4xl md:text-5xl font-extrabold mb-1">450+</p>
+                    <p class="text-4xl md:text-5xl font-extrabold mb-1">500+</p>
                     <p class="uppercase text-xs font-semibold opacity-80">Projects Completed</p>
                 </div>
                 <div class="p-6 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
-                    <p class="text-4xl md:text-5xl font-extrabold mb-1">5</p>
+                    <p class="text-4xl md:text-5xl font-extrabold mb-1">8</p>
                     <p class="uppercase text-xs font-semibold opacity-80">Core Services</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-16 md:py-24 bg-white">
+    <section id="about" class="py-16 md:py-24 bg-white scroll-mt-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
 
                 <div class="lg:col-span-1 order-2 lg:order-1">
-                    <p class="text-primary-600 text-lg font-semibold mb-2 uppercase tracking-wide">Our Foundation</p>
+                    <p class="text-primary-600 text-lg font-semibold mb-2 uppercase tracking-wide">Our Story</p>
                     <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
-                        Building <strong class="text-primary-600">Trust</strong> Through Technical Excellence.
+                        Expertise You Can Trust <strong class="text-primary-600">Nationwide</strong>.
                     </h2>
-                    <p class="text-gray-600 mb-8 leading-relaxed text-lg">
-                        We are <strong>GBS Trusted Company Limited</strong>, your local partner for guaranteed comfort and safety. Founded in <strong>2019</strong>, our commitment is to provide prompt, high-quality AC, Electrical, and Plumbing services across Dar es Salaam and Zanzibar.
+                    <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                        Founded in Dar es Salaam, <strong>GBS Trusted Company Limited</strong> is a BRELA-registered company (No. 154573453) specializing in Air Conditioning, refrigeration, plumbing, CCTV, electrical fencing, and equipment trading.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Since 2019, we have provided multi-discipline engineering services with an innovative problem-solving approach. Our highly qualified team offers complete services from project feasibility to detailed design and construction management.
                     </p>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
@@ -104,7 +107,7 @@
                             </div>
                             <div>
                                 <h4 class="text-lg font-bold text-gray-800 mb-1">Our Mission</h4>
-                                <p class="text-gray-600 text-sm">To provide the best solution in HVAC and security with unmatched dedication.</p>
+                                <p class="text-gray-600 text-sm">To provide the highest quality products and services exceeding our client’s expectations through excellence and professionalism.</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -113,13 +116,13 @@
                             </div>
                             <div>
                                 <h4 class="text-lg font-bold text-gray-800 mb-1">Our Vision</h4>
-                                <p class="text-gray-600 text-sm">To be the most reliable, customer-oriented service provider in the region.</p>
+                                <p class="text-gray-600 text-sm">Becoming the most reliable, sustainable in technology, customer-oriented, and fastest-growing service provider.</p>
                             </div>
                         </div>
                     </div>
 
-                    <a href="{{route('services')}}" class="inline-flex items-center px-8 py-4 border border-primary-600 text-base font-bold rounded-xl shadow-sm text-primary-600 bg-white hover:bg-primary-600 hover:text-white transition-all duration-300">
-                        View All Services <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    <a href="{{route('about')}}" class="inline-flex items-center px-8 py-4 border border-primary-600 text-base font-bold rounded-xl shadow-sm text-primary-600 bg-white hover:bg-primary-600 hover:text-white transition-all duration-300">
+                        Read Our Full Story <i class="fas fa-arrow-right ml-2 text-sm"></i>
                     </a>
                 </div>
 
@@ -133,7 +136,7 @@
                         </div>
                         <div class="absolute -top-6 -right-6 w-32 h-32 bg-primary-600 rounded-full flex items-center justify-center text-white text-center p-4 z-20 shadow-xl border-8 border-white">
                             <div>
-                                <p class="text-2xl font-bold leading-none">5+</p>
+                                <p class="text-2xl font-bold leading-none">6+</p>
                                 <p class="text-[10px] uppercase font-bold">Years of Exp</p>
                             </div>
                         </div>
@@ -143,103 +146,66 @@
         </div>
     </section>
 
-    <section id="work" class="py-16 md:py-24 bg-gray-100">
+    <section id="work" class="py-16 md:py-24 bg-gray-100 scroll-mt-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 max-w-3xl mx-auto">
                 <p class="text-primary-600 text-lg font-semibold mb-2 uppercase tracking-wide">Expertise You Can Trust</p>
                 <h2 class="text-4xl font-bold text-gray-800">Solutions for Guaranteed Comfort and Safety</h2>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-6">
-                            <div class="flex items-center justify-center w-14 h-14 bg-primary-50 text-primary-600 rounded-xl text-2xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center justify-center w-12 h-12 bg-primary-50 text-primary-600 rounded-xl text-xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
                                 <i class="fas fa-fan"></i>
                             </div>
-                            <p class="text-4xl font-extrabold text-gray-100 group-hover:text-primary-50 transition-all duration-300">01</p>
                         </div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-3 group-hover:text-primary-600 transition-colors duration-300"><a href="#service">Air Conditioning</a></h4>
-                        <p class="text-gray-600 leading-relaxed">Complete services from new installations of central air and mini-splits to emergency repairs and routine maintenance plans.</p>
-                    </div>
-                    <div class="px-8 pb-8">
-                        <a href="#service" class="inline-flex items-center text-primary-600 font-bold hover:translate-x-2 transition-transform duration-300">
-                            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                        </a>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary-600 transition-colors duration-300">AC Services</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Professional installation, repair, and maintenance for homes, industries, and commercial units.</p>
                     </div>
                 </div>
 
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-6">
-                            <div class="flex items-center justify-center w-14 h-14 bg-primary-50 text-primary-600 rounded-xl text-2xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center justify-center w-12 h-12 bg-primary-50 text-primary-600 rounded-xl text-xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
                                 <i class="fas fa-bolt"></i>
                             </div>
-                            <p class="text-4xl font-extrabold text-gray-100 group-hover:text-primary-50 transition-all duration-300">02</p>
                         </div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-3 group-hover:text-primary-600 transition-colors duration-300"><a href="#service">Electrical Services</a></h4>
-                        <p class="text-gray-600 leading-relaxed">Certified electricians for home wiring, panel upgrades, troubleshooting faults, and commercial electrical installations.</p>
-                    </div>
-                    <div class="px-8 pb-8">
-                        <a href="#service" class="inline-flex items-center text-primary-600 font-bold hover:translate-x-2 transition-transform duration-300">
-                            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                        </a>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary-600 transition-colors duration-300">Electrical</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Knowledgeable technicians for all electrical systems, building design, and power installations.</p>
                     </div>
                 </div>
 
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-6">
-                            <div class="flex items-center justify-center w-14 h-14 bg-primary-50 text-primary-600 rounded-xl text-2xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center justify-center w-12 h-12 bg-primary-50 text-primary-600 rounded-xl text-xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
                                 <i class="fas fa-wrench"></i>
                             </div>
-                            <p class="text-4xl font-extrabold text-gray-100 group-hover:text-primary-50 transition-all duration-300">03</p>
                         </div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-3 group-hover:text-primary-600 transition-colors duration-300"><a href="#service">Plumbing Services</a></h4>
-                        <p class="text-gray-600 leading-relaxed">Rapid response for 24/7 emergencies, drain cleaning, water heater repair, and comprehensive plumbing system maintenance.</p>
-                    </div>
-                    <div class="px-8 pb-8">
-                        <a href="#service" class="inline-flex items-center text-primary-600 font-bold hover:translate-x-2 transition-transform duration-300">
-                            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                        </a>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary-600 transition-colors duration-300">Plumbing</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Certified plumbers for residential, industrial, and commercial properties. Available 24/7.</p>
                     </div>
                 </div>
 
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-6">
-                            <div class="flex items-center justify-center w-14 h-14 bg-primary-50 text-primary-600 rounded-xl text-2xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center justify-center w-12 h-12 bg-primary-50 text-primary-600 rounded-xl text-xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
                                 <i class="fas fa-video"></i>
                             </div>
-                            <p class="text-4xl font-extrabold text-gray-100 group-hover:text-primary-50 transition-all duration-300">04</p>
                         </div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-3 group-hover:text-primary-600 transition-colors duration-300"><a href="#service">CCTV & Security</a></h4>
-                        <p class="text-gray-600 leading-relaxed">Installation and integration of advanced CCTV systems, access control, and alarm solutions for residential and commercial security.</p>
-                    </div>
-                    <div class="px-8 pb-8">
-                        <a href="#service" class="inline-flex items-center text-primary-600 font-bold hover:translate-x-2 transition-transform duration-300">
-                            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                        </a>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary-600 transition-colors duration-300">Security</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Turnkey security projects including CCTV, alarm systems, and high-voltage electric fencing.</p>
                     </div>
                 </div>
-
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-6">
-                            <div class="flex items-center justify-center w-14 h-14 bg-primary-50 text-primary-600 rounded-xl text-2xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
-                                <i class="fas fa-lock"></i>
-                            </div>
-                            <p class="text-4xl font-extrabold text-gray-100 group-hover:text-primary-50 transition-all duration-300">05</p>
-                        </div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-3 group-hover:text-primary-600 transition-colors duration-300"><a href="#service">Electric Fencing</a></h4>
-                        <p class="text-gray-600 leading-relaxed">Designing and installing high-quality, legally compliant electric perimeter fencing for maximum security deterrence.</p>
-                    </div>
-                    <div class="px-8 pb-8">
-                        <a href="#service" class="inline-flex items-center text-primary-600 font-bold hover:translate-x-2 transition-transform duration-300">
-                            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                        </a>
-                    </div>
-                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="{{route('services')}}" class="inline-flex items-center text-primary-600 font-bold hover:translate-x-2 transition-transform duration-300">
+                    Explore All 8 Core Services <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -292,7 +258,7 @@
                     <div class="relative z-10">
                         <p class="text-primary-700 text-2xl font-bold mb-3">Ready for Service?</p>
                         <h3 class="text-4xl font-extrabold text-gray-800 mb-6 leading-tight">Book Your Expert Technician Today.</h3>
-                        <p class="text-gray-700 mb-8">Contact us now for a free consultation or immediate emergency support. We serve all areas in Dar es Salaam and Zanzibar.</p>
+                        <p class="text-gray-700 mb-8">Contact us now for a free consultation or immediate technical support. We serve all areas across Tanzania, from major cities to remote locations.</p>
 
                         <div class="space-y-4">
                             <a href="tel:+255789415238" class="block w-full text-center px-6 py-4 border border-primary-600 text-lg font-bold rounded-lg shadow-md text-primary-600 bg-white hover:bg-primary-50 transition duration-300">
@@ -305,63 +271,105 @@
         </div>
     </section>
 
-    <section id="gallery" class="py-16 md:py-24 bg-gray-50">
+    <section id="projects" class="py-16 md:py-24 bg-gray-50 scroll-mt-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 max-w-3xl mx-auto">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
                 <p class="text-primary-600 text-lg font-semibold mb-2 uppercase tracking-wide">Our Track Record</p>
-                <h2 class="text-4xl font-bold text-gray-800">Showcasing Quality Workmanship </h2>
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Some of our previous projects successfully completed</h2>
+                <p class="text-gray-600">Explore how GBS Trusted Company Limited delivers excellence across various industries and locations in Tanzania.</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="relative group overflow-hidden rounded-xl shadow-xl aspect-square">
-                    <img src="images/gbs-02.jpeg" alt="AC Installation" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="p-4 text-center text-white transform translate-y-4 group-hover:translate-y-0 transition duration-500">
-                            <h3 class="text-xl font-bold">AC Installation</h3>
-                            <p class="text-sm mt-2">Professional cooling solutions</p>
-                        </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Azure Properties -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/gbs-02.jpeg" alt="Azure Properties Zanzibar" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2024</div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Azure Properties – Michamvi, Zanzibar</h4>
+                        <p class="text-gray-600 text-sm mb-4">Comprehensive installation of Air Conditioning, Plumbing, Electrical Wiring, and CCTV systems for high-value development.</p>
+                        <ul class="text-xs text-gray-500 space-y-1 mb-4">
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Split & Central AC Installation</li>
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Cold/Hot Water (PPR) & Drainage</li>
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Main & Sub-Distribution Boards</li>
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>IP CCTV Surveillance Systems</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="relative group overflow-hidden rounded-xl shadow-xl aspect-square">
-                    <img src="images/gbs-03.jpeg" alt="Electrical Wiring" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="p-4 text-center text-white transform translate-y-4 group-hover:translate-y-0 transition duration-500">
-                            <h3 class="text-xl font-bold">Electrical Wiring</h3>
-                            <p class="text-sm mt-2">Safe and reliable wiring</p>
-                        </div>
+
+                <!-- Project 2: Halotel Towers -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/gbs-03.jpeg" alt="Halotel Arusha & Tanga" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2023</div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Halotel Towers – Arusha & Tanga</h4>
+                        <p class="text-gray-600 text-sm mb-4">AC Maintenance and Repair for critical telecommunication hubs to ensure uninterrupted cooling for equipment rooms.</p>
+                        <ul class="text-xs text-gray-500 space-y-1 mb-4">
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Preventive & Corrective Maintenance</li>
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Refrigerant Re-charging & Cleaning</li>
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Compressor & Motor Replacement</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="relative group overflow-hidden rounded-xl shadow-xl aspect-square">
-                    <img src="images/gbs-04.jpeg" alt="Plumbing Repair" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="p-4 text-center text-white transform translate-y-4 group-hover:translate-y-0 transition duration-500">
-                            <h3 class="text-xl font-bold">Plumbing Repair</h3>
-                            <p class="text-sm mt-2">Expert maintenance & repair</p>
-                        </div>
+
+                <!-- Project 3: The Power Villa -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/gbs-04.jpeg" alt="The Power Villa Zanzibar" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2022</div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">The Power Villa – Zanzibar</h4>
+                        <p class="text-gray-600 text-sm mb-4">Full installation of CCTV cameras, AC systems, plumbing, and electrical wiring adhering to international standards.</p>
+                        <ul class="text-xs text-gray-500 space-y-1 mb-4">
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>HD CCTV Covering Critical Areas</li>
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Centralized AC for Common Areas</li>
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Modern Plumbing & Leak-proof Systems</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="relative group overflow-hidden rounded-xl shadow-xl aspect-square">
-                    <img src="images/gbs-05.jpeg" alt="CCTV Installation" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="p-4 text-center text-white transform translate-y-4 group-hover:translate-y-0 transition duration-500">
-                            <h3 class="text-xl font-bold">CCTV Installation</h3>
-                            <p class="text-sm mt-2">Advanced security monitoring</p>
-                        </div>
+
+                <!-- Project 4: Popex Hotel -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/gbs-05.jpeg" alt="Popex Hotel Dar es Salaam" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2023</div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Popex Hotel – Dar es Salaam</h4>
+                        <p class="text-gray-600 text-sm mb-4">Professional AC services and maintenance to enhance system efficiency and guest satisfaction.</p>
+                        <ul class="text-xs text-gray-500 space-y-1 mb-4">
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Comprehensive Unit Inspection</li>
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Faulty Parts Replacement</li>
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>System Calibration & Optimization</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="relative group overflow-hidden rounded-xl shadow-xl aspect-square">
-                    <img src="images/gbs-06.jpeg" alt="Electric Fencing" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="p-4 text-center text-white transform translate-y-4 group-hover:translate-y-0 transition duration-500">
-                            <h3 class="text-xl font-bold">Electric Fencing</h3>
-                            <p class="text-sm mt-2">Secure perimeter protection</p>
-                        </div>
+
+                <!-- Project 5: Sky Bar Paje -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/gbs-06.jpeg" alt="Sky Bar Paje Zanzibar" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2022</div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Sky Bar Paje – Zanzibar</h4>
+                        <p class="text-gray-600 text-sm mb-4">Modern electrical system installation including safe wiring, power distribution, and decorative lighting.</p>
+                        <ul class="text-xs text-gray-500 space-y-1 mb-4">
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Main & Sub-Distribution Boards</li>
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Decorative & Functional Lighting</li>
+                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Grounding & Surge Protection</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="testimonials" class="py-16 md:py-24 bg-gray-50">
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-50 scroll-mt-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <p class="text-primary-600 text-lg font-semibold mb-2 uppercase tracking-wide">Testimonials</p>
