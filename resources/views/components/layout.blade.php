@@ -15,115 +15,218 @@
 
 <body class="font-sans" x-data="{ mobileMenuOpen: false }">
 
-<header id="site-header" class="fixed top-0 w-full z-50 bg-white shadow-md transition duration-300">
+<header id="site-header" class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition duration-300" x-data="{ mobileMenuOpen: false }">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <nav class="flex items-center justify-between h-20 lg:py-0">
-            <h1><a class="text-2xl font-bold" href="{{route('welcome')}}">
-                    <img src="images/gbs-logo.jpg" alt="GBS Logo" class="h-20">
-                    {{--                    <span class="text-primary-600">GBS</span> Trusted--}}
-                </a></h1>
-
-            <div class="hidden lg:flex lg:items-center lg:w-auto" id="navbarScroll">
-                <ul class="flex flex-row space-x-8">
-                    <li class="nav-item">
-                        <a
-                            class="{{ request()->routeIs('welcome') ? 'text-primary-600 font-semibold' : 'text-gray-600 hover:text-primary-600' }} transition duration-150 py-2 lg:py-0 uppercase text-sm tracking-widest"
-                            href="{{ route('welcome') }}"
-                        >Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a
-                            class="{{ request()->routeIs('about') ? 'text-primary-600 font-semibold' : 'text-gray-600 hover:text-primary-600' }} transition duration-150 py-2 lg:py-0 uppercase text-sm tracking-widest"
-                            href="{{ route('about') }}"
-                        >About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a
-                            class="{{ request()->routeIs('services') ? 'text-primary-600 font-semibold' : 'text-gray-600 hover:text-primary-600' }} transition duration-150 py-2 lg:py-0 uppercase text-sm tracking-widest"
-                            href="{{ route('services') }}"
-                        >Services</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a
-                            class="{{ request()->routeIs('contacts') ? 'text-primary-600 font-semibold' : 'text-gray-600 hover:text-primary-600' }} transition duration-150 py-2 lg:py-0 uppercase text-sm tracking-widest"
-                            href="{{ route('contacts') }}"
-                        >Contact</a>
-                    </li>
-                </ul>
+        <nav class="flex items-center justify-between h-20">
+            <div class="flex-shrink-0">
+                <a class="flex items-center gap-2" href="{{route('welcome')}}">
+                    <img src="{{ asset('images/gbs-logo.jpg') }}" alt="GBS Logo" class="h-12 w-auto rounded-lg shadow-sm">
+                    <span class="text-xl font-black tracking-tighter text-gray-900">GBS <span class="text-primary-600">TRUSTED</span></span>
+                </a>
             </div>
 
+            <div class="hidden lg:flex lg:items-center space-x-1">
+                @php
+                    $navLinks = [
+                        ['name' => 'Home', 'route' => 'welcome'],
+                        ['name' => 'About', 'route' => 'about'],
+                        ['name' => 'Services', 'route' => 'services'],
+                        ['name' => 'Contact', 'route' => 'contacts'],
+                    ];
+                @endphp
+                @foreach($navLinks as $link)
+                    <a
+                        href="{{ route($link['route']) }}"
+                        class="px-4 py-2 text-sm font-medium transition-all duration-200 rounded-full {{ request()->routeIs($link['route']) ? 'bg-primary-50 text-primary-600' : 'text-gray-600 hover:text-primary-600 hover:bg-gray-50' }}"
+                    >
+                        {{ $link['name'] }}
+                    </a>
+                @endforeach
+                <a href="{{ route('contacts') }}" class="ml-4 px-6 py-2.5 bg-primary-600 text-white text-sm font-bold rounded-full hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-500/30 transition-all duration-300">
+                    Get Quote
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="flex lg:hidden">
+                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="inline-flex items-center justify-center p-2 rounded-xl text-gray-600 hover:text-primary-600 hover:bg-gray-100 focus:outline-none transition-colors" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg x-show="!mobileMenuOpen" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg x-show="mobileMenuOpen" x-cloak class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
         </nav>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div x-show="mobileMenuOpen"
+         x-cloak
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-4"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 translate-y-0"
+         x-transition:leave-end="opacity-0 -translate-y-4"
+         class="lg:hidden bg-white border-b border-gray-100 shadow-xl"
+         id="mobile-menu">
+        <div class="px-4 pt-2 pb-6 space-y-1">
+            @foreach($navLinks as $link)
+                <a
+                    href="{{ route($link['route']) }}"
+                    class="block px-4 py-3 text-base font-semibold rounded-xl {{ request()->routeIs($link['route']) ? 'bg-primary-50 text-primary-600' : 'text-gray-600 hover:bg-gray-50 hover:text-primary-600' }}"
+                >
+                    {{ $link['name'] }}
+                </a>
+            @endforeach
+            <div class="pt-4">
+                <a href="{{ route('contacts') }}" class="block w-full text-center px-6 py-4 bg-primary-600 text-white font-bold rounded-xl shadow-lg shadow-primary-500/20">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
     </div>
 </header>
 
 {{ $slot }}
 
-<footer class="bg-gray-800">
-    <section class="py-12 md:py-16">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-wrap -mx-4">
+<footer class="bg-gray-950 text-gray-300 relative overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-primary-600/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-96 h-96 bg-primary-600/5 rounded-full blur-3xl"></div>
 
-                <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 lg:mb-0">
-                    <h6 class="text-lg font-semibold text-white mb-4 text-primary-400 border-b border-primary-400 pb-2 inline-block">About GBS</h6>
-                    <p class="text-gray-400 mb-6 text-sm leading-relaxed"><strong>GBS Trusted Company Limited</strong> operates across <strong>Tanzania</strong> (Mainland and Zanzibar), providing expert solutions in AC, Electrical, Plumbing, and Security services since 2019.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-gray-400 hover:bg-primary-600 hover:text-white transition duration-300"><span class="fab fa-facebook-f"></span></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-gray-400 hover:bg-primary-600 hover:text-white transition duration-300"><span class="fab fa-instagram"></span></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-gray-400 hover:bg-primary-600 hover:text-white transition duration-300"><span class="fab fa-linkedin-in"></span></a>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Main Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 py-20">
+            <!-- Brand Column -->
+            <div class="space-y-8">
+                <div>
+                    <a class="flex items-center gap-3 mb-6" href="{{route('welcome')}}">
+                        <img src="{{ asset('images/gbs-logo.jpg') }}" alt="GBS Logo" class="h-14 w-auto rounded-xl">
+                        <span class="text-2xl font-black tracking-tighter text-white">GBS <span class="text-primary-500">TRUSTED</span></span>
+                    </a>
+                    <p class="text-gray-400 leading-relaxed max-w-sm">
+                        Providing world-class engineering solutions across <span class="text-white font-medium">Tanzania</span>. From the heart of Dar es Salaam to the shores of Zanzibar, we guarantee comfort in every project.
+                    </p>
+                </div>
+                <div class="flex gap-4">
+                    @php
+                        $socials = [
+                            ['icon' => 'fab fa-facebook-f', 'url' => '#'],
+                            ['icon' => 'fab fa-instagram', 'url' => '#'],
+                            ['icon' => 'fab fa-linkedin-in', 'url' => '#'],
+                            ['icon' => 'fab fa-whatsapp', 'url' => 'https://wa.me/255787858011'],
+                        ];
+                    @endphp
+                    @foreach($socials as $social)
+                        <a href="{{ $social['url'] }}" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary-600 hover:text-white hover:-translate-y-1 transition-all duration-300">
+                            <i class="{{ $social['icon'] }}"></i>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+
+            <!-- Services Column -->
+            <div>
+                <h4 class="text-white font-bold text-lg mb-8 relative inline-block">
+                    Our Expertise
+                    <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-600 rounded-full"></span>
+                </h4>
+                <ul class="space-y-4">
+                    @php
+                        $services = [
+                            'AC Installation & Repair',
+                            'Modern Plumbing Solutions',
+                            'Electrical Systems & Wiring',
+                            'CCTV & Smart Security',
+                            'Electric Fencing',
+                            'Infrastructure Projects',
+                        ];
+                    @endphp
+                    @foreach($services as $service)
+                        <li>
+                            <a href="#" class="group flex items-center hover:text-primary-400 transition-colors">
+                                <span class="w-1.5 h-1.5 rounded-full bg-primary-600 mr-3 group-hover:scale-150 transition-transform"></span>
+                                {{ $service }}
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div>
+                <h4 class="text-white font-bold text-lg mb-8 relative inline-block">
+                    Get In Touch
+                    <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-600 rounded-full"></span>
+                </h4>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-primary-600/10 flex items-center justify-center text-primary-500 shrink-0">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <p class="text-sm leading-relaxed text-gray-400">
+                            P.O Box 18009, Makumbusho,<br>
+                            Kinondoni, Dar es salaam,<br>
+                            <span class="text-white font-medium">Tanzania</span>
+                        </p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-primary-600/10 flex items-center justify-center text-primary-500 shrink-0">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Call Us</p>
+                            <a href="tel:+255787858011" class="text-white hover:text-primary-400 font-medium">+255 787 858011</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-primary-600/10 flex items-center justify-center text-primary-500 shrink-0">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Email Us</p>
+                            <a href="mailto:info@gbstrusted.co.tz" class="text-white hover:text-primary-400 font-medium">info@gbstrusted.co.tz</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 lg:mb-0">
-                    <h6 class="text-lg font-semibold mb-4 text-white border-b border-primary-400 pb-2 inline-block">Our Expertise</h6>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="text-gray-400 hover:text-primary-400 transition duration-150 flex items-center"><i class="fas fa-chevron-right text-[10px] mr-2 text-primary-600"></i> AC Installation & Repair</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary-400 transition duration-150 flex items-center"><i class="fas fa-chevron-right text-[10px] mr-2 text-primary-600"></i> Plumbing Solutions</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary-400 transition duration-150 flex items-center"><i class="fas fa-chevron-right text-[10px] mr-2 text-primary-600"></i> Electrical Systems</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary-400 transition duration-150 flex items-center"><i class="fas fa-chevron-right text-[10px] mr-2 text-primary-600"></i> CCTV & Security</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary-400 transition duration-150 flex items-center"><i class="fas fa-chevron-right text-[10px] mr-2 text-primary-600"></i> Electric Fencing</a></li>
-                    </ul>
-                </div>
-
-                <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
-                    <h6 class="text-lg font-semibold mb-4 text-white border-b border-primary-400 pb-2 inline-block">Contact Info</h6>
-                    <ul class="space-y-4 text-sm">
-                        <li class="flex items-start text-gray-400 gap-3">
-                            <i class="fas fa-map-marker-alt text-primary-500 mt-1"></i>
-                            <span>P.O Box 18009, Makumbusho-Kinondoni, Dar es salaam, Tanzania.<br><small class="text-gray-500 italic">Serving Tanzania Nationwide</small></span>
-                        </li>
-                        <li class="flex items-center text-gray-400 gap-3">
-                            <i class="fas fa-phone-alt text-primary-500"></i>
-                            <a href="tel:+255787858011" class="hover:text-primary-400">+255 787 858011</a>
-                        </li>
-                        <li class="flex flex-col text-gray-400 gap-2">
-                            <div class="flex items-center gap-3">
-                                <i class="fas fa-envelope text-primary-500"></i>
-                                <a href="mailto:domisahali@gmail.com" class="hover:text-primary-400">domisahali@gmail.com</a>
-                            </div>
-                            <div class="flex items-center gap-3 ml-7">
-                                <a href="mailto:info@gbstrusted.co.tz" class="hover:text-primary-400 text-xs">info@gbstrusted.co.tz</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
-                    <h6 class="text-lg font-semibold mb-4 text-white border-b border-primary-400 pb-2 inline-block">Work Anywhere</h6>
-                    <p class="text-gray-400 text-xs leading-relaxed mb-4">We are not limited to Dar es Salaam and Zanzibar. Our team is ready to deliver quality services <strong>anywhere in Tanzania</strong>, ensuring professionalism in every project.</p>
-                    <img src="images/gbs-logo.jpg" alt="GBS" class="h-12 opacity-50 grayscale hover:grayscale-0 transition duration-300">
-                </div>
-
             </div>
 
-            <div class="mt-10 pt-6 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-                <!-- Bold text updated to <strong> -->
-                <p class="mb-4 md:mb-0">© 2025 <strong>GBS</strong> Trusted Company Limited. All rights reserved.</p>
+            <!-- Newsletter/Location Column -->
+            <div>
+                <h4 class="text-white font-bold text-lg mb-8 relative inline-block">
+                    Nationwide Reach
+                    <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-600 rounded-full"></span>
+                </h4>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    Our specialized teams are equipped to handle projects in any region of Tanzania, ensuring the same GBS quality everywhere.
+                </p>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-4 text-primary-400">
+                        <i class="fas fa-globe-africa text-2xl animate-pulse"></i>
+                        <span class="text-sm font-bold text-white uppercase tracking-widest">Mainland & Islands</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        @foreach(['Dar es Salaam', 'Zanzibar', 'Arusha', 'Tanga', 'Dodoma'] as $city)
+                            <span class="text-[10px] px-2 py-1 bg-white/5 rounded-md text-gray-400">{{ $city }}</span>
+                        @endforeach
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+
+        <!-- Bottom Bar -->
+        <div class="py-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p>© {{ date('Y') }} <span class="text-white font-bold">GBS Trusted Company Limited</span>. All rights reserved.</p>
+            <div class="flex gap-8 text-gray-500">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 </html>

@@ -35,29 +35,58 @@
                     <p class="text-gray-600">For emergency repairs, service bookings, or free quotes, fill out the form below. We respond promptly!</p>
                 </div>
 
-                <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
+                @if(session('success'))
+                    <div class="mb-8 p-6 bg-green-50 border-l-4 border-green-500 rounded-2xl shadow-sm">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-green-800 font-bold">{{ session('success') }}</p>
+                            </div>
+                        </div>
+                    </div>
+                @endif
+
+                <form action="{{ route('contacts.submit') }}" method="post" class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
+                    @csrf
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                         <div class="space-y-6">
                             <div>
                                 <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Your Name</label>
-                                <input type="text" name="w3lName" id="w3lName" placeholder="Full Name" required="" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
+                                <input type="text" name="name" id="name" placeholder="Full Name" value="{{ old('name') }}" required="" class="w-full p-4 bg-gray-50 border @error('name') border-red-500 @else border-gray-200 @enderror rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
+                                @error('name')
+                                    <p class="mt-1 text-xs text-red-500 font-bold">{{ $message }}</p>
+                                @enderror
                             </div>
                             <div>
                                 <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Phone Number</label>
-                                <input type="number" name="w3lPhone" placeholder="+255..." required="" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
+                                <input type="text" name="phone" placeholder="+255..." value="{{ old('phone') }}" required="" class="w-full p-4 bg-gray-50 border @error('phone') border-red-500 @else border-gray-200 @enderror rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
+                                @error('phone')
+                                    <p class="mt-1 text-xs text-red-500 font-bold">{{ $message }}</p>
+                                @enderror
                             </div>
                             <div>
                                 <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Email Address</label>
-                                <input type="email" name="w3lSender" id="w3lSender" placeholder="email@example.com" required="" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
+                                <input type="email" name="email" id="email" placeholder="email@example.com" value="{{ old('email') }}" required="" class="w-full p-4 bg-gray-50 border @error('email') border-red-500 @else border-gray-200 @enderror rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
+                                @error('email')
+                                    <p class="mt-1 text-xs text-red-500 font-bold">{{ $message }}</p>
+                                @enderror
                             </div>
                             <div>
                                 <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Subject</label>
-                                <input type="text" name="w3lSubject" placeholder="How can we help?" required="" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
+                                <input type="text" name="subject" placeholder="How can we help?" value="{{ old('subject') }}" required="" class="w-full p-4 bg-gray-50 border @error('subject') border-red-500 @else border-gray-200 @enderror rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
+                                @error('subject')
+                                    <p class="mt-1 text-xs text-red-500 font-bold">{{ $message }}</p>
+                                @enderror
                             </div>
                         </div>
                         <div class="flex flex-col">
                             <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Your Message</label>
-                            <textarea name="w3lMessage" id="w3lMessage" placeholder="Describe your service need, location, and preferred time..." required="" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all flex-grow min-h-[300px]"></textarea>
+                            <textarea name="message" id="message" placeholder="Describe your service need, location, and preferred time..." required="" class="w-full p-4 bg-gray-50 border @error('message') border-red-500 @else border-gray-200 @enderror rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all flex-grow min-h-[300px]">{{ old('message') }}</textarea>
+                            @error('message')
+                                <p class="mt-1 text-xs text-red-500 font-bold">{{ $message }}</p>
+                            @enderror
                         </div>
                     </div>
 

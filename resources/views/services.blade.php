@@ -31,7 +31,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 items-center">
 
                 <div class="lg:col-span-1 mb-8 lg:mb-0">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop" alt="Technician working on a building system" class="img-fluid rounded-xl shadow-2xl w-full h-auto object-cover">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop" alt="Local Tanzanian Infrastructure" class="img-fluid rounded-3xl shadow-2xl w-full h-[500px] object-cover">
                 </div>
 
                 <div class="lg:col-span-1">
@@ -71,25 +71,31 @@
                 <h3 class="text-4xl font-bold text-gray-800">Why Trust GBS?</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?q=80&w=2070&auto=format&fit=crop" alt="Technician with tools" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-primary-600 transition duration-300"><a href="#feature">24/7 Emergency Service</a></h4>
-                        <p class="text-gray-600">We are available around the clock to handle your urgent AC, electrical, or plumbing breakdowns.</p>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop" alt="Local infrastructure maintenance" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-black text-gray-900 mb-4 uppercase tracking-tight">24/7 Support</h4>
+                        <p class="text-gray-500 leading-relaxed">We are available around the clock to handle your urgent AC, electrical, or plumbing breakdowns anywhere in Tanzania.</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1454165833767-027eeea15c3e?q=80&w=2070&auto=format&fit=crop" alt="Quote pad" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-primary-600 transition duration-300"><a href="#feature">Free Consultation & Quote</a></h4>
-                        <p class="text-gray-600">Get a no-obligation, accurate, and transparent quote for any installation or major repair work.</p>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517646288024-aa60d1fab267?q=80&w=2070&auto=format&fit=crop" alt="Local technical consultation" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-black text-gray-900 mb-4 uppercase tracking-tight">Free Quote</h4>
+                        <p class="text-gray-500 leading-relaxed">Get a no-obligation, accurate, and transparent quote for any technical installation or major repair work.</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop" alt="Certified technician" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-primary-600 transition duration-300"><a href="#feature">Certified Experts</a></h4>
-                        <p class="text-gray-600">All our services are delivered by highly trained, licensed, and friendly technicians.</p>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2070&auto=format&fit=crop" alt="Certified local experts" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-black text-gray-900 mb-4 uppercase tracking-tight">Certified Experts</h4>
+                        <p class="text-gray-500 leading-relaxed">All our technical services are delivered by highly trained, licensed, and dedicated Tanzanian professionals.</p>
                     </div>
                 </div>
             </div>
@@ -104,11 +110,14 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- AC Installation -->
-                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
-                        <i class="fas fa-fan" aria-hidden="true"></i>
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://derm.co.tz/electrics/wp-content/uploads/2019/07/IMG_0352-1030x687.jpg" alt="Professional AC Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
+                            <i class="fas fa-fan" aria-hidden="true"></i>
+                        </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">AC Installation</h4>
                         <p class="text-gray-600 text-sm leading-relaxed mb-4">Professional AC installation and replacement for homes, industries, and commercial buildings. We handle central air, ductless mini-splits, and more.</p>
                         <ul class="space-y-2 text-xs text-gray-500">
@@ -119,11 +128,14 @@
                 </div>
 
                 <!-- AC Repair -->
-                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
-                        <i class="fas fa-tools" aria-hidden="true"></i>
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?q=80&w=2070&auto=format&fit=crop" alt="Fast AC Repair Services" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
+                            <i class="fas fa-tools" aria-hidden="true"></i>
+                        </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">AC Repair</h4>
                         <p class="text-gray-600 text-sm leading-relaxed mb-4">Fast and reliable AC repair services. Certified technicians available 24/7 for emergency support and same-day repairs.</p>
                         <ul class="space-y-2 text-xs text-gray-500">
@@ -134,11 +146,14 @@
                 </div>
 
                 <!-- AC Maintenance -->
-                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
-                        <i class="fas fa-sync" aria-hidden="true"></i>
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" alt="Thorough AC Maintenance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
+                            <i class="fas fa-sync" aria-hidden="true"></i>
+                        </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">AC Maintenance</h4>
                         <p class="text-gray-600 text-sm leading-relaxed mb-4">Keep your AC running efficiently. We offer thorough inspections, tune-ups, and cleaning to extend your system's lifespan.</p>
                         <ul class="space-y-2 text-xs text-gray-500">
@@ -149,11 +164,14 @@
                 </div>
 
                 <!-- Plumbing -->
-                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
-                        <i class="fas fa-faucet" aria-hidden="true"></i>
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca1f963?q=80&w=2070&auto=format&fit=crop" alt="Expert Plumbing Services" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
+                            <i class="fas fa-faucet" aria-hidden="true"></i>
+                        </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">Plumbing Services</h4>
                         <p class="text-gray-600 text-sm leading-relaxed mb-4">From leaky faucets to complex setups. Certified plumbers for residential, commercial, and industrial areas.</p>
                         <ul class="space-y-2 text-xs text-gray-500">
@@ -164,11 +182,14 @@
                 </div>
 
                 <!-- Electrical -->
-                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
-                        <i class="fas fa-bolt" aria-hidden="true"></i>
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://ngilisho.co.tz/wp-content/uploads/2025/08/2-electrical-engineers.jpg" alt="Qualified Electrical Technicians" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
+                            <i class="fas fa-bolt" aria-hidden="true"></i>
+                        </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">Electrical Services</h4>
                         <p class="text-gray-600 text-sm leading-relaxed mb-4">Knowledgeable, qualified, and licensed technicians for design, installation, and maintenance of all electrical systems.</p>
                         <ul class="space-y-2 text-xs text-gray-500">
@@ -179,11 +200,14 @@
                 </div>
 
                 <!-- CCTV & Security -->
-                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
-                        <i class="fas fa-video" aria-hidden="true"></i>
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2044&auto=format&fit=crop" alt="Advanced Security Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
+                            <i class="fas fa-video" aria-hidden="true"></i>
+                        </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">CCTV & Security</h4>
                         <p class="text-gray-600 text-sm leading-relaxed mb-4">Design, planning, installation, and repair of security systems. Hikvision, Dahua, Bosch, and other leading brands.</p>
                         <ul class="space-y-2 text-xs text-gray-500">
@@ -194,16 +218,37 @@
                 </div>
 
                 <!-- Electric Fencing -->
-                <div class="p-8 bg-gray-50 rounded-3xl shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
-                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/31151457/2370715741.jpg" alt="Electric Fencing Security" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">Electric Fencing</h4>
                         <p class="text-gray-600 text-sm leading-relaxed mb-4">Strong perimeter security barrier with high-voltage pulses. Energy-efficient, cost-effective, and durable protection.</p>
                         <ul class="space-y-2 text-xs text-gray-500">
                             <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Intrusion detection alarm</li>
                             <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Residential & Industrial</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Solar Installation -->
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://businessinsider.co.tz/wp-content/uploads/2025/06/58028037_607.webp" alt="Professional Solar Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
+                            <i class="fas fa-solar-panel" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-800 mb-4">Solar Installation</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Sustainable energy solutions for homes and businesses. We design and install high-quality solar power systems tailored to your needs.</p>
+                        <ul class="space-y-2 text-xs text-gray-500">
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> On-grid & Off-grid systems</li>
+                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Solar water heating</li>
                         </ul>
                     </div>
                 </div>

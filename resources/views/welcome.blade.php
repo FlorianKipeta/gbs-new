@@ -7,9 +7,9 @@
     <section id="home" class="relative pt-20" x-data="{
         activeSlide: 0,
         slides: [
-            { image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop', title: 'Guaranteed Comfort Everywhere in Tanzania.', subtitle: 'Providing top-notch solutions in AC, Electrical, and Plumbing services across the nation since 2019.' },
-            { image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ecb?q=80&w=2070&auto=format&fit=crop', title: 'Professional Infrastructure Projects.', subtitle: 'Comprehensive services for properties, hotels, and telecommunication hubs.' },
-            { image: 'https://images.unsplash.com/photo-1558389186-438424b00a32?q=80&w=2070&auto=format&fit=crop', title: 'Expert Technical Solutions 24/7.', subtitle: 'Our skilled technicians are ready to handle your most critical needs anywhere in Tanzania.' }
+            { image: 'https://derm.co.tz/electrics/wp-content/uploads/2019/07/IMG_0352-1030x687.jpg', title: 'Guaranteed Comfort Everywhere in Tanzania.', subtitle: 'Expert solutions in AC, Electrical, and Plumbing services across the nation since 2019.' },
+            { image: 'https://ngilisho.co.tz/wp-content/uploads/2025/08/2-electrical-engineers.jpg', title: 'Professional Infrastructure Projects.', subtitle: 'Comprehensive technical services for properties, hotels, and telecommunication hubs.' },
+            { image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop', title: 'Expert Technical Solutions 24/7.', subtitle: 'Our skilled technicians are ready to handle your most critical needs anywhere in Tanzania.' }
         ],
         next() { this.activeSlide = (this.activeSlide + 1) % this.slides.length },
         prev() { this.activeSlide = (this.activeSlide - 1 + this.slides.length) % this.slides.length },
@@ -65,24 +65,25 @@
         </div>
     </section>
 
-    <section id="stats" class="py-12 bg-primary-600 text-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div class="p-6 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
-                    <p class="text-4xl md:text-5xl font-extrabold mb-1">6+</p>
-                    <p class="uppercase text-xs font-semibold opacity-80">Years in Business</p>
+    <section id="stats" class="py-20 bg-gray-900 relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary-600/5"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                <div class="p-8 bg-white/5 border border-white/10 rounded-3xl backdrop-blur-md text-center group hover:bg-primary-600 transition-all duration-500">
+                    <p class="text-4xl md:text-6xl font-black text-white mb-2 group-hover:scale-110 transition-transform">6+</p>
+                    <p class="uppercase text-xs font-bold tracking-widest text-primary-400 group-hover:text-white">Years Experience</p>
                 </div>
-                <div class="p-6 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
-                    <p class="text-4xl md:text-5xl font-extrabold mb-1">98%</p>
-                    <p class="uppercase text-xs font-semibold opacity-80">Client Satisfaction</p>
+                <div class="p-8 bg-white/5 border border-white/10 rounded-3xl backdrop-blur-md text-center group hover:bg-primary-600 transition-all duration-500">
+                    <p class="text-4xl md:text-6xl font-black text-white mb-2 group-hover:scale-110 transition-transform">98%</p>
+                    <p class="uppercase text-xs font-bold tracking-widest text-primary-400 group-hover:text-white">Success Rate</p>
                 </div>
-                <div class="p-6 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
-                    <p class="text-4xl md:text-5xl font-extrabold mb-1">500+</p>
-                    <p class="uppercase text-xs font-semibold opacity-80">Projects Completed</p>
+                <div class="p-8 bg-white/5 border border-white/10 rounded-3xl backdrop-blur-md text-center group hover:bg-primary-600 transition-all duration-500">
+                    <p class="text-4xl md:text-6xl font-black text-white mb-2 group-hover:scale-110 transition-transform">10+</p>
+                    <p class="uppercase text-xs font-bold tracking-widest text-primary-400 group-hover:text-white">Projects Done</p>
                 </div>
-                <div class="p-6 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
-                    <p class="text-4xl md:text-5xl font-extrabold mb-1">8</p>
-                    <p class="uppercase text-xs font-semibold opacity-80">Core Services</p>
+                <div class="p-8 bg-white/5 border border-white/10 rounded-3xl backdrop-blur-md text-center group hover:bg-primary-600 transition-all duration-500">
+                    <p class="text-4xl md:text-6xl font-black text-white mb-2 group-hover:scale-110 transition-transform">24/7</p>
+                    <p class="uppercase text-xs font-bold tracking-widest text-primary-400 group-hover:text-white">Active Support</p>
                 </div>
             </div>
         </div>
@@ -132,16 +133,20 @@
 
                 <div class="lg:col-span-1 order-1 lg:order-2 mt-12 lg:mt-0 relative">
                     <div class="relative">
-                        <img src="images/gbs-06.jpeg" alt="GBS Office Team" class="rounded-3xl shadow-2xl w-full h-[450px] object-cover relative z-10">
-                        <div class="absolute -bottom-10 -left-10 w-2/3 hidden lg:block z-20">
-                            <div class="bg-white p-4 rounded-2xl shadow-2xl">
-                                <img src="images/gbs-logo.jpg" alt="GBS Technician Working" class="w-full h-48 object-cover rounded-xl">
+                        <img src="https://businessinsider.co.tz/wp-content/uploads/2025/06/58028037_607.webp" alt="Solar Engineering Excellence" class="rounded-[3rem] shadow-2xl w-full h-[600px] object-cover relative z-10 border-8 border-white">
+                        <div class="absolute -bottom-12 -left-12 w-1/2 hidden lg:block z-20">
+                            <div class="bg-white p-6 rounded-[2rem] shadow-2xl border border-gray-100">
+                                <img src="https://images.unsplash.com/photo-1517646288024-aa60d1fab267?q=80&w=1000&auto=format&fit=crop" alt="African Team Working" class="w-full h-48 object-cover rounded-2xl">
+                                <div class="mt-4 flex items-center gap-3">
+                                    <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                                    <span class="text-xs font-bold uppercase tracking-widest text-gray-500">Active Projects Nationwide</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="absolute -top-6 -right-6 w-32 h-32 bg-primary-600 rounded-full flex items-center justify-center text-white text-center p-4 z-20 shadow-xl border-8 border-white">
-                            <div>
-                                <p class="text-2xl font-bold leading-none">6+</p>
-                                <p class="text-[10px] uppercase font-bold">Years of Exp</p>
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary-600 rounded-full flex items-center justify-center text-white text-center p-6 z-20 shadow-2xl border-[12px] border-white group">
+                            <div class="group-hover:scale-110 transition-transform duration-500">
+                                <p class="text-4xl font-black leading-none">6+</p>
+                                <p class="text-[10px] uppercase font-black tracking-tighter">Years of Trust</p>
                             </div>
                         </div>
                     </div>
@@ -150,66 +155,79 @@
         </div>
     </section>
 
-    <section id="work" class="py-16 md:py-24 bg-gray-100 scroll-mt-20">
+    <section id="work" class="py-24 bg-gray-50 scroll-mt-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 max-w-3xl mx-auto">
-                <p class="text-primary-600 text-lg font-semibold mb-2 uppercase tracking-wide">Expertise You Can Trust</p>
-                <h2 class="text-4xl font-bold text-gray-800">Solutions for Guaranteed Comfort and Safety</h2>
+            <div class="text-center mb-20 max-w-3xl mx-auto">
+                <span class="inline-block px-4 py-1.5 mb-4 text-xs font-black tracking-widest text-primary-600 uppercase bg-primary-50 rounded-full">Our Excellence</span>
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 tracking-tight">Technical Solutions for <span class="text-primary-600 italic">Total Comfort</span></h2>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <div class="flex items-center justify-center w-12 h-12 bg-primary-50 text-primary-600 rounded-xl text-xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
-                                <i class="fas fa-fan"></i>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                @php
+                    $features = [
+                        [
+                            'icon' => 'fas fa-fan',
+                            'title' => 'AC Installation',
+                            'desc' => 'Professional AC installation for homes, industries, and commercial buildings. We handle central air, ductless mini-splits, and more.',
+                            'image' => 'https://derm.co.tz/electrics/wp-content/uploads/2019/07/IMG_0352-1030x687.jpg'
+                        ],
+                        [
+                            'icon' => 'fas fa-bolt',
+                            'title' => 'Electrical Services',
+                            'desc' => 'Qualified technicians for design, installation, and maintenance of all electrical systems.',
+                            'image' => 'https://ngilisho.co.tz/wp-content/uploads/2025/08/2-electrical-engineers.jpg'
+                        ],
+                        [
+                            'icon' => 'fas fa-wrench',
+                            'title' => 'Plumbing Services',
+                            'desc' => 'From leaky faucets to complex setups. Certified plumbers for residential, commercial, and industrial areas.',
+                            'image' => 'https://images.unsplash.com/photo-1585704032915-c3400ca1f963?q=80&w=2070&auto=format&fit=crop'
+                        ],
+                        [
+                            'icon' => 'fas fa-video',
+                            'title' => 'CCTV & Security',
+                            'desc' => 'Design, installation, and repair of security systems using leading brands like Hikvision and Dahua.',
+                            'image' => 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2044&auto=format&fit=crop'
+                        ],
+                        [
+                            'icon' => 'fas fa-solar-panel',
+                            'title' => 'Solar Installation',
+                            'desc' => 'Sustainable energy solutions for homes and businesses with high-quality solar power systems.',
+                            'image' => 'https://businessinsider.co.tz/wp-content/uploads/2025/06/58028037_607.webp'
+                        ],
+                        [
+                            'icon' => 'fas fa-shield-alt',
+                            'title' => 'Electric Fencing',
+                            'desc' => 'Strong perimeter security barriers with high-voltage pulses for durable protection and peace of mind.',
+                            'image' => 'https://d2j6dbq0eux0bg.cloudfront.net/images/31151457/2370715741.jpg'
+                        ],
+                    ];
+                @endphp
+                @foreach($features as $feature)
+                    <div class="group relative bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col h-full">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="{{ $feature['image'] }}" alt="{{ $feature['title'] }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 flex items-center gap-3">
+                                <div class="w-12 h-12 flex items-center justify-center bg-primary-600 text-white rounded-xl text-xl shadow-xl group-hover:rotate-12 transition-transform duration-500">
+                                    <i class="{{ $feature['icon'] }}"></i>
+                                </div>
+                                <h4 class="text-xl font-black text-white drop-shadow-md">{{ $feature['title'] }}</h4>
                             </div>
                         </div>
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary-600 transition-colors duration-300">AC Services</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">Professional installation, repair, and maintenance for homes, industries, and commercial units.</p>
-                    </div>
-                </div>
-
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <div class="flex items-center justify-center w-12 h-12 bg-primary-50 text-primary-600 rounded-xl text-xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
-                                <i class="fas fa-bolt"></i>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <p class="text-gray-600 text-base leading-relaxed mb-8 flex-grow">
+                                {{ $feature['desc'] }}
+                            </p>
+                            <div class="flex items-center justify-between pt-6 border-t border-gray-50">
+                                <a href="{{ route('services') }}" class="inline-flex items-center text-sm font-black uppercase tracking-widest text-primary-600 group/link">
+                                    <span>Explore Service</span>
+                                    <i class="fas fa-arrow-right ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+                                </a>
                             </div>
                         </div>
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary-600 transition-colors duration-300">Electrical</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">Knowledgeable technicians for all electrical systems, building design, and power installations.</p>
                     </div>
-                </div>
-
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <div class="flex items-center justify-center w-12 h-12 bg-primary-50 text-primary-600 rounded-xl text-xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
-                                <i class="fas fa-wrench"></i>
-                            </div>
-                        </div>
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary-600 transition-colors duration-300">Plumbing</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">Certified plumbers for residential, industrial, and commercial properties. Available 24/7.</p>
-                    </div>
-                </div>
-
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <div class="flex items-center justify-center w-12 h-12 bg-primary-50 text-primary-600 rounded-xl text-xl group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
-                                <i class="fas fa-video"></i>
-                            </div>
-                        </div>
-                        <h4 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary-600 transition-colors duration-300">Security</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">Turnkey security projects including CCTV, alarm systems, and high-voltage electric fencing.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-12">
-                <a href="{{route('services')}}" class="inline-flex items-center text-primary-600 font-bold hover:translate-x-2 transition-transform duration-300">
-                    Explore All 8 Core Services <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                </a>
+                @endforeach
             </div>
         </div>
     </section>
@@ -222,43 +240,43 @@
                     <p class="text-primary-600 text-lg font-semibold mb-2 uppercase tracking-wide">Commitment to Service</p>
                     <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Why GBS is the Right Choice</h3>
 
-                    <div class="space-y-6">
+                    <div class="space-y-8">
 
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 flex items-center justify-center bg-primary-600 text-white rounded-lg text-xl flex-shrink-0 mr-4">
+                        <div class="flex items-start group">
+                            <div class="w-14 h-14 flex items-center justify-center bg-primary-50 text-primary-600 rounded-2xl text-2xl flex-shrink-0 mr-6 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
                                 <i class="fas fa-user-shield"></i>
                             </div>
                             <div>
-                                <h4 class="text-xl font-bold text-gray-800">Licensed and Insured Experts</h4>
-                                <p class="text-gray-600">Our technicians are fully licensed and equipped, ensuring expert and compliant service delivery every time.</p>
+                                <h4 class="text-xl font-black text-gray-900 mb-2">Licensed & Insured Experts</h4>
+                                <p class="text-gray-500 leading-relaxed">Our technicians are fully certified and equipped, ensuring compliant and high-standard service delivery.</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 flex items-center justify-center bg-primary-600 text-white rounded-lg text-xl flex-shrink-0 mr-4">
+                        <div class="flex items-start group">
+                            <div class="w-14 h-14 flex items-center justify-center bg-primary-50 text-primary-600 rounded-2xl text-2xl flex-shrink-0 mr-6 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
                                 <i class="fas fa-headset"></i>
                             </div>
                             <div>
-                                <h4 class="text-xl font-bold text-gray-800">24/7 Emergency Response</h4>
-                                <p class="text-gray-600">We offer round-the-clock availability for critical repairs, minimizing downtime and disruption to your home or business.</p>
+                                <h4 class="text-xl font-black text-gray-900 mb-2">24/7 Emergency Support</h4>
+                                <p class="text-gray-500 leading-relaxed">We offer round-the-clock availability for critical repairs, minimizing downtime for your business or home.</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 flex items-center justify-center bg-primary-600 text-white rounded-lg text-xl flex-shrink-0 mr-4">
+                        <div class="flex items-start group">
+                            <div class="w-14 h-14 flex items-center justify-center bg-primary-50 text-primary-600 rounded-2xl text-2xl flex-shrink-0 mr-6 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
                                 <i class="fas fa-star"></i>
                             </div>
                             <div>
-                                <h4 class="text-xl font-bold text-gray-800">Quality and Warranty</h4>
-                                <p class="text-gray-600">All work is backed by a 100% service guarantee, utilizing only high-quality, durable parts and equipment.</p>
+                                <h4 class="text-xl font-black text-gray-900 mb-2">Guaranteed Quality</h4>
+                                <p class="text-gray-500 leading-relaxed">All work is backed by our signature service guarantee, using only durable and high-quality equipment.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Image source updated to images/ -->
+                <!-- Image source updated to use asset() -->
                 <div class="lg:col-span-1 p-8 bg-gray-100 rounded-xl shadow-2xl relative overflow-hidden">
-                    <img src="images/gbs-logo.jpg" alt="Book a Technician" class="absolute inset-0 w-full h-full object-cover opacity-30 blur-sm">
+                    <img src="{{ asset('images/gbs-logo.jpg') }}" alt="Book a Technician" class="absolute inset-0 w-full h-full object-cover opacity-30 blur-sm">
                     <div class="relative z-10">
                         <p class="text-primary-700 text-2xl font-bold mb-3">Ready for Service?</p>
                         <h3 class="text-4xl font-extrabold text-gray-800 mb-6 leading-tight">Book Your Expert Technician Today.</h3>
@@ -285,90 +303,94 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1: Azure Properties -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="Azure Properties Zanzibar" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2024</div>
+                <a href="{{ route('projects.show', 'azure-properties') }}" class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?q=80&w=2070&auto=format&fit=crop" alt="Azure Properties Zanzibar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">2024</div>
                     </div>
-                    <div class="p-6 flex-grow">
-                        <h4 class="text-xl font-bold text-gray-800 mb-2">Azure Properties – Michamvi, Zanzibar</h4>
-                        <p class="text-gray-600 text-sm mb-4">Comprehensive installation of Air Conditioning, Plumbing, Electrical Wiring, and CCTV systems for high-value development.</p>
-                        <ul class="text-xs text-gray-500 space-y-1 mb-4">
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Split & Central AC Installation</li>
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Cold/Hot Water (PPR) & Drainage</li>
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Main & Sub-Distribution Boards</li>
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>IP CCTV Surveillance Systems</li>
+                    <div class="p-8 flex-grow border-b-4 border-transparent group-hover:border-primary-600 transition-all duration-300">
+                        <h4 class="text-xl font-black text-gray-900 mb-3 uppercase tracking-tight">Azure Properties – Michamvi, Zanzibar</h4>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">Comprehensive installation of Air Conditioning, Plumbing, Electrical Wiring, and CCTV systems for luxury coastal development.</p>
+                        <ul class="grid grid-cols-1 gap-2 mb-6">
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>Split & Central AC</li>
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>Modern Plumbing</li>
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>IP CCTV Systems</li>
                         </ul>
                     </div>
-                </div>
+                </a>
 
                 <!-- Project 2: Halotel Towers -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1454165833767-027eeea15c3e?q=80&w=2070&auto=format&fit=crop" alt="Halotel Arusha & Tanga" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2023</div>
+                <a href="{{ route('projects.show', 'halotel-towers') }}" class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516383274235-5f42d6c6426d?q=80&w=2070&auto=format&fit=crop" alt="Halotel Arusha & Tanga" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">2023</div>
                     </div>
-                    <div class="p-6 flex-grow">
-                        <h4 class="text-xl font-bold text-gray-800 mb-2">Halotel Towers – Arusha & Tanga</h4>
-                        <p class="text-gray-600 text-sm mb-4">AC Maintenance and Repair for critical telecommunication hubs to ensure uninterrupted cooling for equipment rooms.</p>
-                        <ul class="text-xs text-gray-500 space-y-1 mb-4">
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Preventive & Corrective Maintenance</li>
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Refrigerant Re-charging & Cleaning</li>
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Compressor & Motor Replacement</li>
+                    <div class="p-8 flex-grow border-b-4 border-transparent group-hover:border-primary-600 transition-all duration-300">
+                        <h4 class="text-xl font-black text-gray-900 mb-3 uppercase tracking-tight">Halotel Towers – Nationwide</h4>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">Critical AC Maintenance for telecommunication hubs ensuring 100% equipment uptime in Arusha and Tanga regions.</p>
+                        <ul class="grid grid-cols-1 gap-2 mb-6">
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>Preventive Maint.</li>
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>Precision Cooling</li>
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>System Cleaning</li>
                         </ul>
                     </div>
-                </div>
+                </a>
 
                 <!-- Project 3: The Power Villa -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop" alt="The Power Villa Zanzibar" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2022</div>
+                <a href="{{ route('projects.show', 'power-villa') }}" class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop" alt="The Power Villa Zanzibar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">2022</div>
                     </div>
-                    <div class="p-6 flex-grow">
-                        <h4 class="text-xl font-bold text-gray-800 mb-2">The Power Villa – Zanzibar</h4>
-                        <p class="text-gray-600 text-sm mb-4">Full installation of CCTV cameras, AC systems, plumbing, and electrical wiring adhering to international standards.</p>
-                        <ul class="text-xs text-gray-500 space-y-1 mb-4">
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>HD CCTV Covering Critical Areas</li>
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Centralized AC for Common Areas</li>
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Modern Plumbing & Leak-proof Systems</li>
+                    <div class="p-8 flex-grow border-b-4 border-transparent group-hover:border-primary-600 transition-all duration-300">
+                        <h4 class="text-xl font-black text-gray-900 mb-3 uppercase tracking-tight">The Power Villa – Zanzibar</h4>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">High-end installation of security systems, centralized AC, and premium plumbing for international standard villas.</p>
+                        <ul class="grid grid-cols-1 gap-2 mb-6">
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>HD Surveillance</li>
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>Centralized HVAC</li>
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>Leak-proof Piping</li>
                         </ul>
                     </div>
-                </div>
+                </a>
 
                 <!-- Project 4: Popex Hotel -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop" alt="Popex Hotel Dar es Salaam" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2023</div>
+                <a href="{{ route('projects.show', 'popex-hotel') }}" class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop" alt="Popex Hotel Dar es Salaam" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">2023</div>
                     </div>
-                    <div class="p-6 flex-grow">
-                        <h4 class="text-xl font-bold text-gray-800 mb-2">Popex Hotel – Dar es Salaam</h4>
-                        <p class="text-gray-600 text-sm mb-4">Professional AC services and maintenance to enhance system efficiency and guest satisfaction.</p>
-                        <ul class="text-xs text-gray-500 space-y-1 mb-4">
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Comprehensive Unit Inspection</li>
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Faulty Parts Replacement</li>
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>System Calibration & Optimization</li>
+                    <div class="p-8 flex-grow border-b-4 border-transparent group-hover:border-primary-600 transition-all duration-300">
+                        <h4 class="text-xl font-black text-gray-900 mb-3 uppercase tracking-tight">Popex Hotel – Dar es Salaam</h4>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">Professional AC services and preventive maintenance to enhance system efficiency and guest satisfaction in the city.</p>
+                        <ul class="grid grid-cols-1 gap-2 mb-6">
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>Unit Inspection</li>
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>Parts Replacement</li>
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>System Optimization</li>
                         </ul>
                     </div>
-                </div>
+                </a>
 
                 <!-- Project 5: Sky Bar Paje -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop" alt="Sky Bar Paje Zanzibar" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full">2022</div>
+                <a href="{{ route('projects.show', 'sky-bar-paje') }}" class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1533777857419-377409c1808a?q=80&w=2070&auto=format&fit=crop" alt="Sky Bar Paje Zanzibar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">2022</div>
                     </div>
-                    <div class="p-6 flex-grow">
-                        <h4 class="text-xl font-bold text-gray-800 mb-2">Sky Bar Paje – Zanzibar</h4>
-                        <p class="text-gray-600 text-sm mb-4">Modern electrical system installation including safe wiring, power distribution, and decorative lighting.</p>
-                        <ul class="text-xs text-gray-500 space-y-1 mb-4">
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Main & Sub-Distribution Boards</li>
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Decorative & Functional Lighting</li>
-                            <li><i class="fas fa-check text-primary-600 mr-2"></i>Grounding & Surge Protection</li>
+                    <div class="p-8 flex-grow border-b-4 border-transparent group-hover:border-primary-600 transition-all duration-300">
+                        <h4 class="text-xl font-black text-gray-900 mb-3 uppercase tracking-tight">Sky Bar Paje – Zanzibar</h4>
+                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">Modern electrical system installation including safe wiring, power distribution, and decorative lighting for vibrant nightlife.</p>
+                        <ul class="grid grid-cols-1 gap-2 mb-6">
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>Main Boards</li>
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>Decorative Lighting</li>
+                            <li class="flex items-center text-xs font-bold text-gray-500 uppercase tracking-widest"><span class="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>Surge Protection</li>
                         </ul>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>

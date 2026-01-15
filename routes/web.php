@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -17,3 +19,7 @@ Route::get('/services', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 })->name('contacts');
+
+Route::get('/projects/{slug}', [ProjectController::class, 'show'])->name('projects.show');
+
+Route::post('/contacts', [ContactController::class, 'submit'])->name('contacts.submit');

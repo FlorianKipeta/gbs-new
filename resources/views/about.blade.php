@@ -48,14 +48,14 @@
                     <div class="relative">
                         <div class="grid grid-cols-2 gap-4">
                             <div class="pt-12">
-                                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop" alt="AC Technician at Work" class="w-full h-[400px] object-cover rounded-3xl shadow-2xl">
+                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop" alt="Local AC Infrastructure" class="w-full h-[400px] object-cover rounded-3xl shadow-2xl">
                             </div>
                             <div>
-                                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop" alt="Team Meeting" class="w-full h-[400px] object-cover rounded-3xl shadow-2xl">
+                                <img src="https://images.unsplash.com/photo-1517646288024-aa60d1fab267?q=80&w=2070&auto=format&fit=crop" alt="Local Technical Team" class="w-full h-[400px] object-cover rounded-3xl shadow-2xl">
                             </div>
                         </div>
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-2xl z-20 hidden md:flex border-4 border-primary-50">
-                            <img src="images/gbs-logo.jpg" alt="Logo" class="w-16 h-16 object-contain">
+                            <img src="{{ asset('images/gbs-logo.jpg') }}" alt="Logo" class="w-16 h-16 object-contain">
                         </div>
                     </div>
                 </div>
