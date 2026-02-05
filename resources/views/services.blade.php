@@ -31,7 +31,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 items-center">
 
                 <div class="lg:col-span-1 mb-8 lg:mb-0">
-                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop" alt="Local Tanzanian Infrastructure" class="img-fluid rounded-3xl shadow-2xl w-full h-[500px] object-cover">
+                    <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-11.jpeg') }}" alt="Local Tanzanian Infrastructure" class="img-fluid rounded-3xl shadow-2xl w-full h-[500px] object-cover">
                 </div>
 
                 <div class="lg:col-span-1">
@@ -73,7 +73,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 group">
                     <div class="overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop" alt="Local infrastructure maintenance" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-12.jpeg') }}" alt="Local infrastructure maintenance" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-8">
                         <h4 class="text-2xl font-black text-gray-900 mb-4 uppercase tracking-tight">24/7 Support</h4>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 group">
                     <div class="overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1517646288024-aa60d1fab267?q=80&w=2070&auto=format&fit=crop" alt="Local technical consultation" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-13.jpeg') }}" alt="Local technical consultation" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-8">
                         <h4 class="text-2xl font-black text-gray-900 mb-4 uppercase tracking-tight">Free Quote</h4>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 group">
                     <div class="overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2070&auto=format&fit=crop" alt="Certified local experts" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-14.jpeg') }}" alt="Certified local experts" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-8">
                         <h4 class="text-2xl font-black text-gray-900 mb-4 uppercase tracking-tight">Certified Experts</h4>
@@ -112,7 +112,7 @@
                 <!-- AC Installation -->
                 <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://derm.co.tz/electrics/wp-content/uploads/2019/07/IMG_0352-1030x687.jpg" alt="Professional AC Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-15.jpeg') }}" alt="Professional AC Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-8">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
@@ -130,7 +130,7 @@
                 <!-- AC Repair -->
                 <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?q=80&w=2070&auto=format&fit=crop" alt="Fast AC Repair Services" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-16.jpeg') }}" alt="Fast AC Repair Services" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-8">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
@@ -148,7 +148,7 @@
                 <!-- AC Maintenance -->
                 <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" alt="Thorough AC Maintenance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-17.jpeg') }}" alt="Thorough AC Maintenance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-8">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
@@ -166,7 +166,7 @@
                 <!-- Plumbing -->
                 <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca1f963?q=80&w=2070&auto=format&fit=crop" alt="Expert Plumbing Services" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-18.jpeg') }}" alt="Expert Plumbing Services" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-8">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
@@ -184,7 +184,7 @@
                 <!-- Electrical -->
                 <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://ngilisho.co.tz/wp-content/uploads/2025/08/2-electrical-engineers.jpg" alt="Qualified Electrical Technicians" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-19.jpeg') }}" alt="Qualified Electrical Technicians" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-8">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
@@ -202,7 +202,7 @@
                 <!-- CCTV & Security -->
                 <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2044&auto=format&fit=crop" alt="Advanced Security Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-21.jpeg') }}" alt="Advanced Security Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-8">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
@@ -220,7 +220,7 @@
                 <!-- Electric Fencing -->
                 <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/31151457/2370715741.jpg" alt="Electric Fencing Security" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-22.jpeg') }}" alt="Electric Fencing Security" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-8">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
@@ -238,7 +238,7 @@
                 <!-- Solar Installation -->
                 <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://businessinsider.co.tz/wp-content/uploads/2025/06/58028037_607.webp" alt="Professional Solar Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-23.jpeg') }}" alt="Professional Solar Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-8">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">

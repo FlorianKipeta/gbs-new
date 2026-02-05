@@ -99,11 +99,11 @@
                 {{-- This is a bit manual since we're not using a DB yet --}}
                 @php
                     $allProjects = [
-                        'azure-properties' => ['title' => 'Azure Properties', 'image' => 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?q=80&w=2070&auto=format&fit=crop'],
-                        'halotel-towers' => ['title' => 'Halotel Towers', 'image' => 'https://images.unsplash.com/photo-1516383274235-5f42d6c6426d?q=80&w=2070&auto=format&fit=crop'],
-                        'power-villa' => ['title' => 'The Power Villa', 'image' => 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop'],
-                        'popex-hotel' => ['title' => 'Popex Hotel', 'image' => 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop'],
-                        'sky-bar-paje' => ['title' => 'Sky Bar Paje', 'image' => 'https://images.unsplash.com/photo-1533777857419-377409c1808a?q=80&w=2070&auto=format&fit=crop'],
+                        'azure-properties' => ['title' => 'Azure Properties', 'image' => asset('images/gbs-images/gbs-trusted-company-limited-60.jpeg')],
+                        'halotel-towers' => ['title' => 'Halotel Towers', 'image' => asset('images/gbs-images/gbs-trusted-company-limited-65.jpeg')],
+                        'power-villa' => ['title' => 'The Power Villa', 'image' => asset('images/gbs-images/gbs-trusted-company-limited-70.jpeg')],
+                        'popex-hotel' => ['title' => 'Popex Hotel', 'image' => asset('images/gbs-images/gbs-trusted-company-limited-75.jpeg')],
+                        'sky-bar-paje' => ['title' => 'Sky Bar Paje', 'image' => asset('images/gbs-images/gbs-trusted-company-limited-80.jpeg')],
                     ];
                     unset($allProjects[$slug]);
                     $related = array_slice($allProjects, 0, 3);

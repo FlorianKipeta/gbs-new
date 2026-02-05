@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="{{ $description ?? 'GBS Trusted Company Limited - Professional Air Conditioning, Plumbing, Electrical Wiring, CCTV Installation, and Electric Fencing services across Tanzania (Dar es Salaam, Zanzibar, Arusha, Tanga, and more).' }}">
-    <meta name="keywords" content="{{ $keywords ?? 'Air Conditioning Tanzania, Plumbing services Tanzania, Electrical wiring Dar es Salaam, CCTV installation Zanzibar, GBS Trusted Company, AC maintenance Arusha, AC repair Tanga' }}">
+    <meta name="description" content="{{ $description ?? 'GBS Trusted Company Limited - Professional Air Conditioning, Plumbing, Electrical Wiring, CCTV Installation, and Electric Fencing services in Dar es Salaam and across Tanzania.' }}">
+    <meta name="keywords" content="{{ $keywords ?? 'Air Conditioning Tanzania, Plumbing services Tanzania, Electrical wiring Dar es Salaam, CCTV installation Tanzania, GBS Trusted Company, AC maintenance Tanzania, AC repair Tanzania, HVAC services' }}">
     <title>{{ $title ??  'GBS Trusted Company Limited - Air Conditioning, Electrical & Plumbing Services'}}</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('images/gbs-logo.jpg') }}">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -109,7 +109,7 @@
                         <span class="text-2xl font-black tracking-tighter text-white">GBS <span class="text-primary-500">TRUSTED</span></span>
                     </a>
                     <p class="text-gray-400 leading-relaxed max-w-sm">
-                        Providing world-class engineering solutions across <span class="text-white font-medium">Tanzania</span>. From the heart of Dar es Salaam to the shores of Zanzibar, we guarantee comfort in every project.
+                        Providing world-class engineering solutions. We guarantee comfort in every project, serving clients with excellence and professionalism.
                     </p>
                 </div>
                 <div class="flex gap-4">
@@ -169,9 +169,9 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <p class="text-sm leading-relaxed text-gray-400">
-                            P.O Box 18009, Makumbusho,<br>
-                            Kinondoni, Dar es salaam,<br>
-                            <span class="text-white font-medium">Tanzania</span>
+                            P.O. Box 18009, Makumbusho,<br>
+                            Wakatibado Street,<br>
+                            <span class="text-white font-medium">Dar es Salaam</span>
                         </p>
                     </div>
                     <div class="flex gap-4">
@@ -179,8 +179,9 @@
                             <i class="fas fa-phone-alt"></i>
                         </div>
                         <div>
-                            <p class="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Call Us</p>
-                            <a href="tel:+255787858011" class="text-white hover:text-primary-400 font-medium">+255 787 858011</a>
+                            <p class="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Office Mobile</p>
+                            <a href="tel:+255763383880" class="text-white hover:text-primary-400 font-medium block">+255 763 383 880</a>
+                            <a href="tel:+255787858011" class="text-white hover:text-primary-400 font-medium block">+255 787 858 011</a>
                         </div>
                     </div>
                     <div class="flex gap-4">
@@ -198,20 +199,20 @@
             <!-- Newsletter/Location Column -->
             <div>
                 <h4 class="text-white font-bold text-lg mb-8 relative inline-block">
-                    Nationwide Reach
+                    Professional Services
                     <span class="absolute -bottom-2 left-0 w-8 h-1 bg-primary-600 rounded-full"></span>
                 </h4>
                 <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                    Our specialized teams are equipped to handle projects in any region of Tanzania, ensuring the same GBS quality everywhere.
+                    Our specialized teams are equipped to handle projects of any scale, ensuring the same GBS quality everywhere.
                 </p>
                 <div class="p-6 bg-white/5 border border-white/10 rounded-2xl">
                     <div class="flex items-center gap-3 mb-4 text-primary-400">
-                        <i class="fas fa-globe-africa text-2xl animate-pulse"></i>
-                        <span class="text-sm font-bold text-white uppercase tracking-widest">Mainland & Islands</span>
+                        <i class="fas fa-check-circle text-2xl animate-pulse"></i>
+                        <span class="text-sm font-bold text-white uppercase tracking-widest">Guaranteed Quality</span>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        @foreach(['Dar es Salaam', 'Zanzibar', 'Arusha', 'Tanga', 'Dodoma'] as $city)
-                            <span class="text-[10px] px-2 py-1 bg-white/5 rounded-md text-gray-400">{{ $city }}</span>
+                        @foreach(['Installation', 'Maintenance', 'Repair', 'Consultancy', 'Support'] as $service_type)
+                            <span class="text-[10px] px-2 py-1 bg-white/5 rounded-md text-gray-400">{{ $service_type }}</span>
                         @endforeach
                     </div>
                 </div>

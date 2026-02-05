@@ -8,6 +8,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
+Route::get('/v2', function () {
+    return view('welcome-v2');
+})->name('welcome-v2');
+
 Route::get('/about', function () {
     return view('about');
 })->name('about');
