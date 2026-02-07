@@ -7,9 +7,9 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-wrap items-center justify-between">
                     <div class="mb-4 sm:mb-0">
-                        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-8 sm:mt-4">
-                            Project Details
-                        </h2>
+                        <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-8 sm:mt-4">
+                            {{ $project['title'] }}
+                        </h1>
                     </div>
                     <div>
                         <ul class="flex space-x-2 text-sm text-gray-600">
@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="prose prose-lg max-w-none text-gray-600 leading-relaxed">
-                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Overview</h3>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Project Overview</h2>
                         <p>{{ $project['details'] }}</p>
                     </div>
                 </div>

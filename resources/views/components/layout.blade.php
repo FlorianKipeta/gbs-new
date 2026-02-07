@@ -1,3 +1,44 @@
+@php
+    $footerSocials = [
+        ['icon' => 'fab fa-facebook-f', 'url' => '#', 'name' => 'Facebook'],
+        ['icon' => 'fab fa-instagram', 'url' => '#', 'name' => 'Instagram'],
+        ['icon' => 'fab fa-whatsapp', 'url' => 'https://wa.me/255787858011', 'name' => 'WhatsApp'],
+    ];
+@endphp
+@php
+    $footerServices = [
+        ['name' => 'AC Installation', 'route' => 'services'],
+        ['name' => 'Electrical Services', 'route' => 'services'],
+        ['name' => 'Plumbing Solutions', 'route' => 'services'],
+        ['name' => 'CCTV & Security', 'route' => 'services'],
+        ['name' => 'Electric Fencing', 'route' => 'services'],
+        ['name' => 'Solar Installation', 'route' => 'services'],
+    ];
+@endphp
+@php
+    $footerLinks = [
+        ['name' => 'About Our Company', 'route' => 'about'],
+        ['name' => 'Our Project Portfolio', 'route' => 'welcome', 'hash' => '#projects'],
+        ['name' => 'Contact Support', 'route' => 'contacts'],
+        ['name' => 'Terms of Service', 'route' => 'welcome'],
+        ['name' => 'Privacy Policy', 'route' => 'welcome'],
+    ];
+@endphp
+@php
+    $socials = [
+        ['icon' => 'fab fa-facebook-f', 'url' => '#'],
+        ['icon' => 'fab fa-instagram', 'url' => '#'],
+        ['icon' => 'fab fa-whatsapp', 'url' => 'https://wa.me/255787858011'],
+    ];
+@endphp
+@php
+    $navLinks = [
+        ['name' => 'Home', 'route' => 'welcome'],
+        ['name' => 'About', 'route' => 'about'],
+        ['name' => 'Services', 'route' => 'services'],
+        ['name' => 'Contact', 'route' => 'contacts'],
+    ];
+@endphp
 <!doctype html>
 <html lang="en">
 
@@ -6,7 +47,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ $description ?? 'GBS Trusted Company Limited - Professional Air Conditioning, Plumbing, Electrical Wiring, CCTV Installation, and Electric Fencing services in Dar es Salaam and across Tanzania.' }}">
     <meta name="keywords" content="{{ $keywords ?? 'Air Conditioning Tanzania, Plumbing services Tanzania, Electrical wiring Dar es Salaam, CCTV installation Tanzania, GBS Trusted Company, AC maintenance Tanzania, AC repair Tanzania, HVAC services' }}">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="{{ $title ?? 'GBS Trusted Company Limited - Air Conditioning, Electrical & Plumbing Services' }}">
+    <meta property="og:description" content="{{ $description ?? 'Professional Air Conditioning, Plumbing, Electrical Wiring, CCTV Installation, and Electric Fencing services in Dar es Salaam and across Tanzania.' }}">
+    <meta property="og:image" content="{{ asset('images/gbs-logo.jpg') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ url()->current() }}">
+    <meta property="twitter:title" content="{{ $title ?? 'GBS Trusted Company Limited - Air Conditioning, Electrical & Plumbing Services' }}">
+    <meta property="twitter:description" content="{{ $description ?? 'Professional Air Conditioning, Plumbing, Electrical Wiring, CCTV Installation, and Electric Fencing services in Dar es Salaam and across Tanzania.' }}">
+    <meta property="twitter:image" content="{{ asset('images/gbs-logo.jpg') }}">
+
     <title>{{ $title ??  'GBS Trusted Company Limited - Air Conditioning, Electrical & Plumbing Services'}}</title>
+
+    <script type="application/ld+json">
+    {
+      "@@context": "https://schema.org",
+      "@@type": "LocalBusiness",
+      "name": "GBS Trusted Company Limited",
+      "image": "{{ asset('images/gbs-logo.jpg') }}",
+      "@@id": "{{ url('/') }}",
+      "url": "{{ url('/') }}",
+      "telephone": "+255763383880",
+      "address": {
+        "@@type": "PostalAddress",
+        "streetAddress": "Wakatibado Street, Makumbusho",
+        "addressLocality": "Dar es Salaam",
+        "addressCountry": "TZ"
+      },
+      "geo": {
+        "@@type": "GeoCoordinates",
+        "latitude": -6.7691,
+        "longitude": 39.2385
+      },
+      "openingHoursSpecification": {
+        "@@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://wa.me/255787858011"
+      ]
+    }
+    </script>
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,7 +110,6 @@
 </head>
 
 <body class="font-sans" x-data="{ mobileMenuOpen: false }">
-
 <header id="site-header" class="fixed top-0 w-full z-50 transition-all duration-300"
         x-data="{
             mobileMenuOpen: false,
@@ -37,14 +132,6 @@
             </div>
 
             <div class="hidden lg:flex lg:items-center space-x-2">
-                @php
-                    $navLinks = [
-                        ['name' => 'Home', 'route' => 'welcome'],
-                        ['name' => 'About', 'route' => 'about'],
-                        ['name' => 'Services', 'route' => 'services'],
-                        ['name' => 'Contact', 'route' => 'contacts'],
-                    ];
-                @endphp
                 @foreach($navLinks as $link)
                     <a
                         href="{{ route($link['route']) }}"
@@ -74,6 +161,7 @@
             </div>
         </nav>
     </div>
+</header>
 
     <!-- Mobile menu -->
     <div x-show="mobileMenuOpen"
@@ -104,13 +192,6 @@
             </div>
 
             <div class="pt-8 flex justify-center gap-6">
-                @php
-                    $socials = [
-                        ['icon' => 'fab fa-facebook-f', 'url' => '#'],
-                        ['icon' => 'fab fa-instagram', 'url' => '#'],
-                        ['icon' => 'fab fa-whatsapp', 'url' => 'https://wa.me/255787858011'],
-                    ];
-                @endphp
                 @foreach($socials as $social)
                     <a href="{{ $social['url'] }}" class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-primary-600 hover:text-white transition-all duration-300">
                         <i class="{{ $social['icon'] }}"></i>
@@ -167,13 +248,6 @@
                     </p>
                 </div>
                 <div class="flex gap-4">
-                    @php
-                        $footerSocials = [
-                            ['icon' => 'fab fa-facebook-f', 'url' => '#', 'name' => 'Facebook'],
-                            ['icon' => 'fab fa-instagram', 'url' => '#', 'name' => 'Instagram'],
-                            ['icon' => 'fab fa-whatsapp', 'url' => 'https://wa.me/255787858011', 'name' => 'WhatsApp'],
-                        ];
-                    @endphp
                     @foreach($footerSocials as $social)
                         <a href="{{ $social['url'] }}" class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-primary-600 hover:text-white hover:-translate-y-1 transition-all duration-300 group" title="{{ $social['name'] }}">
                             <i class="{{ $social['icon'] }} text-lg"></i>
@@ -189,16 +263,6 @@
                     Our Services
                 </h4>
                 <ul class="space-y-4">
-                    @php
-                        $footerServices = [
-                            ['name' => 'AC Installation', 'route' => 'services'],
-                            ['name' => 'Electrical Services', 'route' => 'services'],
-                            ['name' => 'Plumbing Solutions', 'route' => 'services'],
-                            ['name' => 'CCTV & Security', 'route' => 'services'],
-                            ['name' => 'Electric Fencing', 'route' => 'services'],
-                            ['name' => 'Solar Installation', 'route' => 'services'],
-                        ];
-                    @endphp
                     @foreach($footerServices as $service)
                         <li>
                             <a href="{{ route($service['route']) }}" class="group flex items-center text-gray-400 hover:text-primary-400 transition-all duration-300">
@@ -217,15 +281,6 @@
                     Company
                 </h4>
                 <ul class="space-y-4">
-                    @php
-                        $footerLinks = [
-                            ['name' => 'About Our Company', 'route' => 'about'],
-                            ['name' => 'Our Project Portfolio', 'route' => 'welcome', 'hash' => '#projects'],
-                            ['name' => 'Contact Support', 'route' => 'contacts'],
-                            ['name' => 'Terms of Service', 'route' => 'welcome'],
-                            ['name' => 'Privacy Policy', 'route' => 'welcome'],
-                        ];
-                    @endphp
                     @foreach($footerLinks as $link)
                         <li>
                             <a href="{{ route($link['route']) }}{{ $link['hash'] ?? '' }}" class="group flex items-center text-gray-400 hover:text-primary-400 transition-all duration-300">

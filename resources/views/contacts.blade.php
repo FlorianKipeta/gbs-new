@@ -14,9 +14,9 @@
                 <div class="flex flex-col md:flex-row items-center justify-between gap-8">
                     <div class="text-center md:text-left">
                         <span class="inline-block px-4 py-1 text-xs font-black tracking-widest text-primary-200 uppercase bg-white/10 rounded-full mb-4">Connect With Us</span>
-                        <h2 class="text-4xl sm:text-6xl font-black text-white leading-tight">
-                            Get in <span class="text-primary-300 italic">Touch</span>
-                        </h2>
+                        <h1 class="text-4xl sm:text-6xl font-black text-white leading-tight">
+                            Contact <span class="text-primary-300 italic">GBS Trusted</span>
+                        </h1>
                         <p class="text-primary-100 mt-4 text-lg max-w-xl">We are here to provide guaranteed comfort and expert technical solutions for all your engineering needs.</p>
                     </div>
                     <div class="flex items-center gap-2 text-sm text-primary-200 bg-black/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">

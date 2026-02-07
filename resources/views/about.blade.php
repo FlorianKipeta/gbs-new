@@ -9,9 +9,9 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-wrap items-center justify-between">
                     <div class="mb-4 sm:mb-0">
-                        <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mt-8 sm:mt-4">
-                            About Us
-                        </h2>
+                        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mt-8 sm:mt-4">
+                            About GBS Trusted Company Limited
+                        </h1>
                     </div>
                     <div>
                         <ul class="flex space-x-2 text-sm text-gray-600">

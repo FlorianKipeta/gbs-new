@@ -1,4 +1,43 @@
-<!-- resources/views/tasks.blade.php -->
+@php
+    $features = [
+        [
+            'icon' => 'fas fa-fan',
+            'title' => 'AC Installation',
+            'desc' => 'Professional AC installation for homes, industries, and commercial buildings.',
+            'image' => asset('images/gbs-images/gbs-trusted-company-limited-35.jpeg'),
+        ],
+        [
+            'icon' => 'fas fa-bolt',
+            'title' => 'Electrical Services',
+            'desc' => 'Qualified technicians for design, installation, and maintenance of all electrical systems.',
+            'image' => asset('images/gbs-images/gbs-trusted-company-limited-7.jpeg'),
+        ],
+        [
+            'icon' => 'fas fa-wrench',
+            'title' => 'Plumbing Services',
+            'desc' => 'Certified plumbers for residential, commercial, and industrial areas.',
+            'image' => asset('images/gbs-images/gbs-trusted-company-limited-30.jpeg'),
+        ],
+        [
+            'icon' => 'fas fa-video',
+            'title' => 'CCTV & Security',
+            'desc' => 'Design, installation, and repair of security systems using leading brands.',
+            'image' => asset('images/gbs-images/gbs-trusted-company-limited-45.jpeg'),
+        ],
+        [
+            'icon' => 'fas fa-solar-panel',
+            'title' => 'Solar Installation',
+            'desc' => 'Sustainable energy solutions with high-quality solar power systems.',
+            'image' => asset('images/gbs-images/gbs-trusted-company-limited-50.jpeg'),
+        ],
+        [
+            'icon' => 'fas fa-shield-alt',
+            'title' => 'Electric Fencing',
+            'desc' => 'Strong perimeter security barriers with high-voltage pulses for durable protection.',
+            'image' => asset('images/gbs-images/gbs-trusted-company-limited-5.jpeg'),
+        ],
+    ];
+@endphp
 <x-layout
     title="GBS Trusted Company Limited - Guaranteed Comfort"
     description="Professional AC installation, plumbing, electrical wiring, and security systems. Expert solutions for homes, industries, and commercial properties."
@@ -53,6 +92,7 @@
                      x-transition:leave-end="opacity-0 scale-110"
                      class="absolute inset-0 bg-cover bg-center flex items-center"
                      :style="`background-image: url('${slide.image}');`"
+                     :aria-label="slide.title"
                 >
                     <!-- Gradient Overlay -->
                     <div class="absolute inset-0 bg-linear-to-r from-gray-900/90 via-gray-900/50 to-transparent"></div>
@@ -65,7 +105,7 @@
                                  x-transition:enter-end="opacity-100 translate-y-0"
                             >
                                 <span class="inline-block px-4 py-1.5 mb-6 text-xs font-black tracking-widest text-white uppercase bg-primary-600 rounded-full" x-text="slide.tag"></span>
-                                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.05] mb-6 tracking-tighter" x-text="slide.title"></h1>
+                                <h2 class="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.05] mb-6 tracking-tighter" x-text="slide.title"></h2>
                                 <p class="text-lg md:text-xl opacity-90 mb-10 max-w-2xl font-medium leading-relaxed" x-text="slide.subtitle"></p>
 
                                 <div class="flex flex-wrap gap-5">
@@ -121,6 +161,7 @@
     </section>
 
     <section id="stats" class="py-12 md:py-20 bg-gray-900 relative overflow-hidden">
+        <h1 class="sr-only">GBS Trusted Company Limited - Professional Engineering Services in Tanzania</h1>
         <div class="absolute inset-0 bg-primary-600/5"></div>
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
@@ -218,46 +259,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                @php
-                    $features = [
-                        [
-                            'icon' => 'fas fa-fan',
-                            'title' => 'AC Installation',
-                            'desc' => 'Professional AC installation for homes, industries, and commercial buildings.',
-                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-35.jpeg')
-                        ],
-                        [
-                            'icon' => 'fas fa-bolt',
-                            'title' => 'Electrical Services',
-                            'desc' => 'Qualified technicians for design, installation, and maintenance of all electrical systems.',
-                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-7.jpeg')
-                        ],
-                        [
-                            'icon' => 'fas fa-wrench',
-                            'title' => 'Plumbing Services',
-                            'desc' => 'Certified plumbers for residential, commercial, and industrial areas.',
-                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-30.jpeg')
-                        ],
-                        [
-                            'icon' => 'fas fa-video',
-                            'title' => 'CCTV & Security',
-                            'desc' => 'Design, installation, and repair of security systems using leading brands.',
-                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-45.jpeg')
-                        ],
-                        [
-                            'icon' => 'fas fa-solar-panel',
-                            'title' => 'Solar Installation',
-                            'desc' => 'Sustainable energy solutions with high-quality solar power systems.',
-                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-50.jpeg')
-                        ],
-                        [
-                            'icon' => 'fas fa-shield-alt',
-                            'title' => 'Electric Fencing',
-                            'desc' => 'Strong perimeter security barriers with high-voltage pulses for durable protection.',
-                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-5.jpeg')
-                        ],
-                    ];
-                @endphp
                 @foreach($features as $feature)
                     <div class="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-500 flex flex-col h-full">
                         <div class="h-48 md:h-64 overflow-hidden relative">
