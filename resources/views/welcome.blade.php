@@ -109,7 +109,7 @@
                                 <p class="text-lg md:text-xl opacity-90 mb-10 max-w-2xl font-medium leading-relaxed" x-text="slide.subtitle"></p>
 
                                 <div class="flex flex-wrap gap-5">
-                                    <a href="#projects" class="group inline-flex items-center px-8 py-4 bg-primary-600 text-white font-black uppercase tracking-widest rounded-2xl shadow-2xl shadow-primary-500/30 hover:bg-primary-700 hover:-translate-y-1 transition-all duration-300">
+                                    <a href="{{ route('welcome', ['hash' => '#projects']) }}" class="group inline-flex items-center px-8 py-4 bg-primary-600 text-white font-black uppercase tracking-widest rounded-2xl shadow-2xl shadow-primary-500/30 hover:bg-primary-700 hover:-translate-y-1 transition-all duration-300">
                                         Explore Projects <i class="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
                                     </a>
                                 </div>

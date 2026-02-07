@@ -24,6 +24,14 @@ Route::get('/contacts', function () {
     return view('contacts');
 })->name('contacts');
 
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+})->name('privacy-policy');
+
+Route::get('/terms-and-conditions', function () {
+    return view('terms-and-conditions');
+})->name('terms-and-conditions');
+
 Route::get('/projects/{slug}', [ProjectController::class, 'show'])->name('projects.show');
 
 Route::post('/contacts', [ContactController::class, 'submit'])->name('contacts.submit');

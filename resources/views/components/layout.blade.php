@@ -20,8 +20,8 @@
         ['name' => 'About Our Company', 'route' => 'about'],
         ['name' => 'Our Project Portfolio', 'route' => 'welcome', 'hash' => '#projects'],
         ['name' => 'Contact Support', 'route' => 'contacts'],
-        ['name' => 'Terms of Service', 'route' => 'welcome'],
-        ['name' => 'Privacy Policy', 'route' => 'welcome'],
+        ['name' => 'Terms of Service', 'route' => 'terms-and-conditions'],
+        ['name' => 'Privacy Policy', 'route' => 'privacy-policy'],
     ];
 @endphp
 @php
@@ -341,9 +341,9 @@
                 <p class="text-gray-500">© {{ date('Y') }} <span class="text-white font-bold tracking-tight">GBS Trusted Company Limited</span>. All rights reserved.</p>
             </div>
             <div class="flex items-center gap-8">
-                <a href="#" class="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
-                <a href="#" class="text-gray-500 hover:text-white transition-colors">Terms & Conditions</a>
-                <a href="#site-header" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-600 hover:text-white transition-all duration-300">
+                <a href="{{ route('privacy-policy') }}" class="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="{{ route('terms-and-conditions') }}" class="text-gray-500 hover:text-white transition-colors">Terms & Conditions</a>
+                <a href="{{ route('welcome') }}#site-header" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-600 hover:text-white transition-all duration-300">
                     <i class="fas fa-chevron-up"></i>
                 </a>
             </div>
