@@ -17,4 +17,13 @@
             <priority>0.7</priority>
         </url>
     @endforeach
+
+    @foreach($services as $slug)
+        <url>
+            <loc>{{ route('services.show', $slug) }}</loc>
+            <lastmod>{{ now()->startOfMonth()->toAtomString() }}</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.9</priority>
+        </url>
+    @endforeach
 </urlset>

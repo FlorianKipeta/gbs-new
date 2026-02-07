@@ -9,4 +9,6 @@ it('returns a successful response for sitemap.xml', function () {
     $response->assertSee('<loc>'.route('welcome').'</loc>', false);
     $response->assertSee('<loc>'.route('about').'</loc>', false);
     $response->assertSee('<loc>'.route('projects.show', 'azure-properties').'</loc>', false);
+    $response->assertSee('<loc>'.route('services.show', 'ac-installation').'</loc>', false);
+    $response->assertSee('<loc>'.route('services.show', 'solar-installation').'</loc>', false);
 });

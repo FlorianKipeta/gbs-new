@@ -19,6 +19,17 @@ class SitemapController extends Controller
             'sky-bar-paje',
         ];
 
+        $services = [
+            'ac-installation',
+            'ac-repair',
+            'ac-maintenance',
+            'plumbing-services',
+            'electrical-services',
+            'cctv-security',
+            'electric-fencing',
+            'solar-installation',
+        ];
+
         $staticPages = [
             'welcome',
             'about',
@@ -31,6 +42,7 @@ class SitemapController extends Controller
         $content = view('sitemap', [
             'staticPages' => $staticPages,
             'projects' => $projects,
+            'services' => $services,
         ])->render();
 
         return response($content, 200)

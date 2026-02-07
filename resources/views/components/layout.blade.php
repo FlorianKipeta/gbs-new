@@ -7,12 +7,12 @@
 @endphp
 @php
     $footerServices = [
-        ['name' => 'AC Installation', 'route' => 'services'],
-        ['name' => 'Electrical Services', 'route' => 'services'],
-        ['name' => 'Plumbing Solutions', 'route' => 'services'],
-        ['name' => 'CCTV & Security', 'route' => 'services'],
-        ['name' => 'Electric Fencing', 'route' => 'services'],
-        ['name' => 'Solar Installation', 'route' => 'services'],
+        ['name' => 'AC Installation', 'route' => 'services.show', 'slug' => 'ac-installation'],
+        ['name' => 'Electrical Services', 'route' => 'services.show', 'slug' => 'electrical-services'],
+        ['name' => 'Plumbing Solutions', 'route' => 'services.show', 'slug' => 'plumbing-services'],
+        ['name' => 'CCTV & Security', 'route' => 'services.show', 'slug' => 'cctv-security'],
+        ['name' => 'Electric Fencing', 'route' => 'services.show', 'slug' => 'electric-fencing'],
+        ['name' => 'Solar Installation', 'route' => 'services.show', 'slug' => 'solar-installation'],
     ];
 @endphp
 @php
@@ -265,7 +265,7 @@
                 <ul class="space-y-4">
                     @foreach($footerServices as $service)
                         <li>
-                            <a href="{{ route($service['route']) }}" class="group flex items-center text-gray-400 hover:text-primary-400 transition-all duration-300">
+                            <a href="{{ route($service['route'], $service['slug']) }}" class="group flex items-center text-gray-400 hover:text-primary-400 transition-all duration-300">
                                 <i class="fas fa-chevron-right text-[10px] mr-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
                                 {{ $service['name'] }}
                             </a>

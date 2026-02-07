@@ -110,146 +110,154 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- AC Installation -->
-                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden">
                         <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-15.jpeg') }}" alt="Professional AC Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col flex-grow">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                             <i class="fas fa-fan" aria-hidden="true"></i>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">AC Installation</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Professional AC installation and replacement for homes, industries, and commercial buildings. We handle central air, ductless mini-splits, and more.</p>
-                        <ul class="space-y-2 text-xs text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> High-efficiency units</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Expert ductwork upgrades</li>
-                        </ul>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Professional AC installation and replacement for homes, industries, and commercial buildings. We handle central air, ductless mini-splits, and more.</p>
+                        <div class="pt-6 border-t border-gray-100 mt-auto">
+                            <a href="{{ route('services.show', 'ac-installation') }}" class="inline-flex items-center text-primary-600 font-bold hover:gap-3 transition-all">
+                                Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- AC Repair -->
-                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden">
                         <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-16.jpeg') }}" alt="Fast AC Repair Services" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col flex-grow">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                             <i class="fas fa-tools" aria-hidden="true"></i>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">AC Repair</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Fast and reliable AC repair services. Certified technicians available 24/7 for emergency support and same-day repairs.</p>
-                        <ul class="space-y-2 text-xs text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Frozen coils & leaks</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Thermostat malfunctions</li>
-                        </ul>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Fast and reliable AC repair services. Certified technicians available 24/7 for emergency support and same-day repairs.</p>
+                        <div class="pt-6 border-t border-gray-100 mt-auto">
+                            <a href="{{ route('services.show', 'ac-repair') }}" class="inline-flex items-center text-primary-600 font-bold hover:gap-3 transition-all">
+                                Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- AC Maintenance -->
-                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden">
                         <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-17.jpeg') }}" alt="Thorough AC Maintenance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col flex-grow">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                             <i class="fas fa-sync" aria-hidden="true"></i>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">AC Maintenance</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Keep your AC running efficiently. We offer thorough inspections, tune-ups, and cleaning to extend your system's lifespan.</p>
-                        <ul class="space-y-2 text-xs text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Filter & coil cleaning</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Refrigerant checks</li>
-                        </ul>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Keep your AC running efficiently. We offer thorough inspections, tune-ups, and cleaning to extend your system's lifespan.</p>
+                        <div class="pt-6 border-t border-gray-100 mt-auto">
+                            <a href="{{ route('services.show', 'ac-maintenance') }}" class="inline-flex items-center text-primary-600 font-bold hover:gap-3 transition-all">
+                                Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Plumbing -->
-                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden">
                         <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-18.jpeg') }}" alt="Expert Plumbing Services" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col flex-grow">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                             <i class="fas fa-faucet" aria-hidden="true"></i>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">Plumbing Services</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">From leaky faucets to complex setups. Certified plumbers for residential, commercial, and industrial areas.</p>
-                        <ul class="space-y-2 text-xs text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> 24/7 emergency repairs</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Sewer & drain cleaning</li>
-                        </ul>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">From leaky faucets to complex setups. Certified plumbers for residential, commercial, and industrial areas.</p>
+                        <div class="pt-6 border-t border-gray-100 mt-auto">
+                            <a href="{{ route('services.show', 'plumbing-services') }}" class="inline-flex items-center text-primary-600 font-bold hover:gap-3 transition-all">
+                                Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Electrical -->
-                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden">
                         <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-19.jpeg') }}" alt="Qualified Electrical Technicians" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col flex-grow">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                             <i class="fas fa-bolt" aria-hidden="true"></i>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">Electrical Services</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Knowledgeable, qualified, and licensed technicians for design, installation, and maintenance of all electrical systems.</p>
-                        <ul class="space-y-2 text-xs text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Home & industrial wiring</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Power line transmission</li>
-                        </ul>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Knowledgeable, qualified, and licensed technicians for design, installation, and maintenance of all electrical systems.</p>
+                        <div class="pt-6 border-t border-gray-100 mt-auto">
+                            <a href="{{ route('services.show', 'electrical-services') }}" class="inline-flex items-center text-primary-600 font-bold hover:gap-3 transition-all">
+                                Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- CCTV & Security -->
-                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden">
                         <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-21.jpeg') }}" alt="Advanced Security Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col flex-grow">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                             <i class="fas fa-video" aria-hidden="true"></i>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">CCTV & Security</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Design, planning, installation, and repair of security systems. Hikvision, Dahua, Bosch, and other leading brands.</p>
-                        <ul class="space-y-2 text-xs text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Access control & Alarms</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Turnkey security projects</li>
-                        </ul>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Design, planning, installation, and repair of security systems. Hikvision, Dahua, Bosch, and other leading brands.</p>
+                        <div class="pt-6 border-t border-gray-100 mt-auto">
+                            <a href="{{ route('services.show', 'cctv-security') }}" class="inline-flex items-center text-primary-600 font-bold hover:gap-3 transition-all">
+                                Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Electric Fencing -->
-                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden">
                         <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-22.jpeg') }}" alt="Electric Fencing Security" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col flex-grow">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                             <i class="fas fa-shield-alt" aria-hidden="true"></i>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">Electric Fencing</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Strong perimeter security barrier with high-voltage pulses. Energy-efficient, cost-effective, and durable protection.</p>
-                        <ul class="space-y-2 text-xs text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Intrusion detection alarm</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Residential & Industrial</li>
-                        </ul>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Strong perimeter security barrier with high-voltage pulses. Energy-efficient, cost-effective, and durable protection.</p>
+                        <div class="pt-6 border-t border-gray-100 mt-auto">
+                            <a href="{{ route('services.show', 'electric-fencing') }}" class="inline-flex items-center text-primary-600 font-bold hover:gap-3 transition-all">
+                                Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Solar Installation -->
-                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300">
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden shadow-sm border border-transparent hover:border-primary-100 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                     <div class="h-48 overflow-hidden">
                         <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-23.jpeg') }}" alt="Professional Solar Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 flex flex-col flex-grow">
                         <div class="w-14 h-14 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6">
                             <i class="fas fa-solar-panel" aria-hidden="true"></i>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-800 mb-4">Solar Installation</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">Sustainable energy solutions for homes and businesses. We design and install high-quality solar power systems tailored to your needs.</p>
-                        <ul class="space-y-2 text-xs text-gray-500">
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> On-grid & Off-grid systems</li>
-                            <li class="flex items-center"><i class="fas fa-check text-primary-600 mr-2"></i> Solar water heating</li>
-                        </ul>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Sustainable energy solutions for homes and businesses. We design and install high-quality solar power systems tailored to your needs.</p>
+                        <div class="pt-6 border-t border-gray-100 mt-auto">
+                            <a href="{{ route('services.show', 'solar-installation') }}" class="inline-flex items-center text-primary-600 font-bold hover:gap-3 transition-all">
+                                Learn More <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 

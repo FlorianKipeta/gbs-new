@@ -5,36 +5,42 @@
             'title' => 'AC Installation',
             'desc' => 'Professional AC installation for homes, industries, and commercial buildings.',
             'image' => asset('images/gbs-images/gbs-trusted-company-limited-35.jpeg'),
+            'slug' => 'ac-installation',
         ],
         [
             'icon' => 'fas fa-bolt',
             'title' => 'Electrical Services',
             'desc' => 'Qualified technicians for design, installation, and maintenance of all electrical systems.',
             'image' => asset('images/gbs-images/gbs-trusted-company-limited-7.jpeg'),
+            'slug' => 'electrical-services',
         ],
         [
             'icon' => 'fas fa-wrench',
             'title' => 'Plumbing Services',
             'desc' => 'Certified plumbers for residential, commercial, and industrial areas.',
             'image' => asset('images/gbs-images/gbs-trusted-company-limited-30.jpeg'),
+            'slug' => 'plumbing-services',
         ],
         [
             'icon' => 'fas fa-video',
             'title' => 'CCTV & Security',
             'desc' => 'Design, installation, and repair of security systems using leading brands.',
             'image' => asset('images/gbs-images/gbs-trusted-company-limited-45.jpeg'),
+            'slug' => 'cctv-security',
         ],
         [
             'icon' => 'fas fa-solar-panel',
             'title' => 'Solar Installation',
             'desc' => 'Sustainable energy solutions with high-quality solar power systems.',
             'image' => asset('images/gbs-images/gbs-trusted-company-limited-50.jpeg'),
+            'slug' => 'solar-installation',
         ],
         [
             'icon' => 'fas fa-shield-alt',
             'title' => 'Electric Fencing',
             'desc' => 'Strong perimeter security barriers with high-voltage pulses for durable protection.',
             'image' => asset('images/gbs-images/gbs-trusted-company-limited-5.jpeg'),
+            'slug' => 'electric-fencing',
         ],
     ];
 @endphp
@@ -276,7 +282,7 @@
                                 {{ $feature['desc'] }}
                             </p>
                             <div class="flex items-center justify-between pt-4 border-t border-gray-50">
-                                <a href="{{ route('services') }}" class="inline-flex items-center text-xs md:text-sm font-black uppercase tracking-widest text-primary-600 group/link">
+                                <a href="{{ route('services.show', $feature['slug']) }}" class="inline-flex items-center text-xs md:text-sm font-black uppercase tracking-widest text-primary-600 group/link">
                                     <span>Explore Service</span>
                                     <i class="fas fa-arrow-right ml-2 group-hover/link:translate-x-1 transition-transform"></i>
                                 </a>
@@ -356,7 +362,7 @@
                 <!-- Project 1: Azure Properties -->
                 <a href="{{ route('projects.show', 'azure-properties') }}" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col">
                     <div class="relative h-48 md:h-64 overflow-hidden">
-                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-60.jpeg') }}" alt="Azure Properties" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-60.jpeg') }}" alt="Azure Properties Zanzibar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="absolute top-4 left-4 bg-primary-600 text-white text-[10px] md:text-xs font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full shadow-lg">2024</div>
                     </div>
@@ -374,7 +380,7 @@
                 <!-- Project 2: Halotel Towers -->
                 <a href="{{ route('projects.show', 'halotel-towers') }}" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col">
                     <div class="relative h-48 md:h-64 overflow-hidden">
-                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-65.jpeg') }}" alt="Halotel Towers" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-65.jpeg') }}" alt="Halotel Towers Maintenance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="absolute top-4 left-4 bg-primary-600 text-white text-[10px] md:text-xs font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full shadow-lg">2023</div>
                     </div>
@@ -392,7 +398,7 @@
                 <!-- Project 3: The Power Villa -->
                 <a href="{{ route('projects.show', 'power-villa') }}" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col">
                     <div class="relative h-48 md:h-64 overflow-hidden">
-                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-70.jpeg') }}" alt="The Power Villa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-70.jpeg') }}" alt="The Power Villa Zanzibar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="absolute top-4 left-4 bg-primary-600 text-white text-[10px] md:text-xs font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full shadow-lg">2022</div>
                     </div>
@@ -410,7 +416,7 @@
                 <!-- Project 4: Popex Hotel -->
                 <a href="{{ route('projects.show', 'popex-hotel') }}" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col">
                     <div class="relative h-48 md:h-64 overflow-hidden">
-                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-75.jpeg') }}" alt="Popex Hotel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-75.jpeg') }}" alt="Popex Hotel AC Maintenance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="absolute top-4 left-4 bg-primary-600 text-white text-[10px] md:text-xs font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full shadow-lg">2023</div>
                     </div>
@@ -428,7 +434,7 @@
                 <!-- Project 5: Sky Bar Paje -->
                 <a href="{{ route('projects.show', 'sky-bar-paje') }}" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col">
                     <div class="relative h-48 md:h-64 overflow-hidden">
-                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-80.jpeg') }}" alt="Sky Bar Paje" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="{{ asset('images/gbs-images/gbs-trusted-company-limited-80.jpeg') }}" alt="Sky Bar Paje Electrical Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="absolute top-4 left-4 bg-primary-600 text-white text-[10px] md:text-xs font-bold px-3 py-1 md:px-4 md:py-1.5 rounded-full shadow-lg">2022</div>
                     </div>
