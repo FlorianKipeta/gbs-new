@@ -27,6 +27,11 @@ class ContactRequest extends FormRequest
             'email' => 'required|email|max:255',
             'subject' => 'required|string|max:255',
             'message' => 'required|string|min:10',
+            'captcha_answer' => ['required', 'numeric', function ($attribute, $value, $fail) {
+                if ($value != session('captcha_result')) {
+                    $fail('The anti-spam answer is incorrect. Please try again.');
+                }
+            }],
         ];
     }
 }

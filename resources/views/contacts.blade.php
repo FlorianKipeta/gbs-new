@@ -5,139 +5,171 @@
     keywords="Contact GBS Trusted, AC Repair Tanzania Phone, GBS Location Dar es Salaam, Emergency Plumber Tanzania, CCTV Support"
 >
     <div class="pt-20 bg-gray-100">
-        <section class="py-12 sm:py-20">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-wrap items-center justify-between">
-                    <div class="mb-4 sm:mb-0">
-                        <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mt-8 sm:mt-4">
-                            Contact Us
+        <section class="py-12 sm:py-20 bg-primary-600 relative overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-white/5 skew-x-[-15deg] translate-x-1/2"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-500/20 rounded-full -translate-x-1/2 translate-y-1/2 blur-3xl"></div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="text-center md:text-left">
+                        <span class="inline-block px-4 py-1 text-xs font-black tracking-widest text-primary-200 uppercase bg-white/10 rounded-full mb-4">Connect With Us</span>
+                        <h2 class="text-4xl sm:text-6xl font-black text-white leading-tight">
+                            Get in <span class="text-primary-300 italic">Touch</span>
                         </h2>
+                        <p class="text-primary-100 mt-4 text-lg max-w-xl">We are here to provide guaranteed comfort and expert technical solutions for all your engineering needs.</p>
                     </div>
-                    <div>
-                        <ul class="flex space-x-2 text-sm text-gray-600">
-                            <li><a href="{{route('welcome')}}" class="hover:text-primary-500">Home</a></li>
-                            <li class="text-gray-400">
-                                <span class="mx-2">/</span> Contact Us
-                            </li>
-                        </ul>
+                    <div class="flex items-center gap-2 text-sm text-primary-200 bg-black/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
+                        <a href="{{route('welcome')}}" class="hover:text-white transition-colors">Home</a>
+                        <span class="opacity-30">/</span>
+                        <span class="text-white font-bold">Contact Us</span>
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <section id="contact-form" class="py-16 md:py-24 bg-white">
+    <section id="contact-content" class="py-16 md:py-24 bg-white relative">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-12">
-                    <p class="text-primary-600 text-lg font-semibold mb-2 uppercase tracking-wide">Get In Touch</p>
-                    <h3 class="text-4xl font-bold text-gray-800 mb-4">Fill the form and send your query</h3>
-                    <p class="text-gray-600">For emergency repairs, service bookings, or free quotes, fill out the form below. We respond promptly!</p>
-                </div>
-
-                @if(session('success'))
-                    <div class="mb-8 p-6 bg-green-50 border-l-4 border-green-500 rounded-2xl shadow-sm">
-                        <div class="flex items-center">
-                            <div class="flex-shrink-0">
-                                <i class="fas fa-check-circle text-green-500 text-xl"></i>
-                            </div>
-                            <div class="ml-4">
-                                <p class="text-green-800 font-bold">{{ session('success') }}</p>
-                            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- Contact Info Cards -->
+                <div class="lg:col-span-4 space-y-8">
+                    <div class="bg-gray-50 p-8 rounded-[2rem] border border-gray-100 hover:shadow-xl transition-all duration-500 group">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6 shadow-lg shadow-primary-600/20 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-map-marked-alt"></i>
                         </div>
+                        <h3 class="text-2xl font-black text-gray-900 mb-4 uppercase tracking-tight">Main Office</h3>
+                        <p class="text-gray-600 leading-relaxed font-medium">
+                            GBS Trusted Company Limited<br>
+                            P.O Box 18009, Makumbusho,<br>
+                            Wakatibado Street, Kinondoni,<br>
+                            Dar es salaam, Tanzania.
+                        </p>
                     </div>
-                @endif
 
-                <form action="{{ route('contacts.submit') }}" method="post" class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
-                    @csrf
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                        <div class="space-y-6">
-                            <div>
-                                <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Your Name</label>
-                                <input type="text" name="name" id="name" placeholder="Full Name" value="{{ old('name') }}" required="" class="w-full p-4 bg-gray-50 border @error('name') border-red-500 @else border-gray-200 @enderror rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
-                                @error('name')
-                                    <p class="mt-1 text-xs text-red-500 font-bold">{{ $message }}</p>
-                                @enderror
-                            </div>
-                            <div>
-                                <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Phone Number</label>
-                                <input type="text" name="phone" placeholder="+255..." value="{{ old('phone') }}" required="" class="w-full p-4 bg-gray-50 border @error('phone') border-red-500 @else border-gray-200 @enderror rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
-                                @error('phone')
-                                    <p class="mt-1 text-xs text-red-500 font-bold">{{ $message }}</p>
-                                @enderror
-                            </div>
-                            <div>
-                                <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Email Address</label>
-                                <input type="email" name="email" id="email" placeholder="email@example.com" value="{{ old('email') }}" required="" class="w-full p-4 bg-gray-50 border @error('email') border-red-500 @else border-gray-200 @enderror rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
-                                @error('email')
-                                    <p class="mt-1 text-xs text-red-500 font-bold">{{ $message }}</p>
-                                @enderror
-                            </div>
-                            <div>
-                                <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Subject</label>
-                                <input type="text" name="subject" placeholder="How can we help?" value="{{ old('subject') }}" required="" class="w-full p-4 bg-gray-50 border @error('subject') border-red-500 @else border-gray-200 @enderror rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all">
-                                @error('subject')
-                                    <p class="mt-1 text-xs text-red-500 font-bold">{{ $message }}</p>
-                                @enderror
-                            </div>
+                    <div class="bg-gray-50 p-8 rounded-[2rem] border border-gray-100 hover:shadow-xl transition-all duration-500 group">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6 shadow-lg shadow-primary-600/20 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-phone-alt"></i>
                         </div>
-                        <div class="flex flex-col">
-                            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Your Message</label>
-                            <textarea name="message" id="message" placeholder="Describe your service need, location, and preferred time..." required="" class="w-full p-4 bg-gray-50 border @error('message') border-red-500 @else border-gray-200 @enderror rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-600 focus:bg-white transition-all flex-grow min-h-[300px]">{{ old('message') }}</textarea>
-                            @error('message')
-                                <p class="mt-1 text-xs text-red-500 font-bold">{{ $message }}</p>
-                            @enderror
+                        <h3 class="text-2xl font-black text-gray-900 mb-4 uppercase tracking-tight">Call Support</h3>
+                        <p class="text-gray-500 text-xs font-black uppercase tracking-widest mb-4">Available 24/7 for Emergencies</p>
+                        <div class="space-y-3">
+                            <a href="tel:+255763383880" class="flex items-center gap-3 text-xl text-gray-900 hover:text-primary-600 font-black transition-colors">
+                                <span class="text-sm bg-primary-100 text-primary-600 w-8 h-8 rounded-full flex items-center justify-center"><i class="fas fa-headset"></i></span>
+                                +255 763 383 880
+                            </a>
+                            <a href="tel:+255787858011" class="flex items-center gap-3 text-lg text-gray-600 hover:text-primary-600 font-bold transition-colors">
+                                <span class="text-xs bg-gray-200 text-gray-500 w-7 h-7 rounded-full flex items-center justify-center"><i class="fab fa-whatsapp"></i></span>
+                                +255 787 858 011
+                            </a>
                         </div>
                     </div>
 
-                    <div class="text-center md:text-right">
-                        <button type="submit" class="w-full md:w-auto inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-bold rounded-xl shadow-lg text-white bg-primary-600 hover:bg-primary-700 transition duration-300">
-                            Submit Now <i class="fas fa-paper-plane ml-3"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact-details" class="py-16 md:py-24 bg-gray-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center border border-gray-100">
-                    <div class="w-20 h-20 flex items-center justify-center bg-primary-50 text-primary-600 rounded-2xl text-3xl mb-6">
-                        <span class="fas fa-map-marked-alt"></span>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Location</h3>
-                        <p class="text-gray-600 leading-relaxed"><strong>GBS Trusted Company Limited</strong><br>P.O Box 18009, Makumbusho-Kinondoni,<br>Dar es salaam, Tanzania.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center border border-gray-100">
-                    <div class="w-20 h-20 flex items-center justify-center bg-primary-50 text-primary-600 rounded-2xl text-3xl mb-6">
-                        <span class="fas fa-phone-alt"></span>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Give us a call</h3>
-                        <p class="text-gray-400 text-sm mb-4 uppercase font-bold tracking-widest">Available 24/7</p>
-                        <div class="space-y-2">
-                            <p><a href="tel:+255787858011" class="text-xl text-primary-600 hover:text-primary-700 font-bold transition-colors">+255 787 858011</a></p>
-                            <p><a href="tel:+255789415238" class="text-lg text-gray-600 hover:text-primary-600 font-medium transition-colors">+255 789 415238</a></p>
+                    <div class="bg-gray-50 p-8 rounded-[2rem] border border-gray-100 hover:shadow-xl transition-all duration-500 group">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary-600 text-white rounded-2xl text-2xl mb-6 shadow-lg shadow-primary-600/20 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-gray-900 mb-4 uppercase tracking-tight">Email Us</h3>
+                        <p class="text-gray-500 text-xs font-black uppercase tracking-widest mb-4">Official Inquiry</p>
+                        <div class="space-y-3">
+                            <a href="mailto:info@gbstrusted.co.tz" class="flex items-center gap-3 text-lg text-primary-600 hover:text-primary-700 font-black transition-colors underline decoration-2 underline-offset-4">
+                                info@gbstrusted.co.tz
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center border border-gray-100">
-                    <div class="w-20 h-20 flex items-center justify-center bg-primary-50 text-primary-600 rounded-2xl text-3xl mb-6">
-                        <span class="fas fa-envelope-open-text"></span>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Help Desk</h3>
-                        <p class="text-gray-400 text-sm mb-4 uppercase font-bold tracking-widest">Email Us Anytime</p>
-                        <div class="space-y-2">
-                            <p><a href="mailto:domisahali@gmail.com" class="text-lg text-primary-600 hover:text-primary-700 font-bold transition-colors">domisahali@gmail.com</a></p>
-                            <p><a href="mailto:info@gbstrusted.co.tz" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">info@gbstrusted.co.tz</a></p>
+                <!-- Contact Form -->
+                <div class="lg:col-span-8">
+                    <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-gray-200/50 border border-gray-100 relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-primary-600"></div>
+
+                        <div class="mb-10">
+                            <h3 class="text-3xl font-black text-gray-900 mb-2 tracking-tight">Send a Message</h3>
+                            <p class="text-gray-500 font-medium">We usually respond within 2 hours during business hours.</p>
                         </div>
+
+                        @if(session('success'))
+                            <div class="mb-8 p-6 bg-green-50 border border-green-100 rounded-2xl flex items-center gap-4 animate-bounce">
+                                <div class="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg shadow-green-500/30">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="text-green-800 font-black">{{ session('success') }}</p>
+                            </div>
+                        @endif
+
+                        @php
+                            $n1 = rand(1, 9);
+                            $n2 = rand(1, 9);
+                            session(['captcha_result' => $n1 + $n2]);
+                        @endphp
+
+                        <form action="{{ route('contacts.submit') }}" method="post" class="space-y-8">
+                            @csrf
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="space-y-1.5">
+                                    <label class="text-xs font-black text-gray-400 uppercase tracking-[0.2em] ml-1">Full Name</label>
+                                    <div class="relative group">
+                                        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary-600 transition-colors"><i class="fas fa-user"></i></span>
+                                        <input type="text" name="name" placeholder="John Doe" value="{{ old('name') }}" required class="w-full pl-12 pr-4 py-4 bg-gray-50 border @error('name') border-red-500 @else border-gray-100 @enderror rounded-2xl focus:outline-none focus:ring-4 focus:ring-primary-600/5 focus:border-primary-600 focus:bg-white transition-all font-bold text-gray-900">
+                                    </div>
+                                    @error('name') <p class="text-xs text-red-500 font-bold mt-1 ml-1">{{ $message }}</p> @enderror
+                                </div>
+
+                                <div class="space-y-1.5">
+                                    <label class="text-xs font-black text-gray-400 uppercase tracking-[0.2em] ml-1">Phone Number</label>
+                                    <div class="relative group">
+                                        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary-600 transition-colors"><i class="fas fa-phone"></i></span>
+                                        <input type="text" name="phone" placeholder="+255..." value="{{ old('phone') }}" required class="w-full pl-12 pr-4 py-4 bg-gray-50 border @error('phone') border-red-500 @else border-gray-100 @enderror rounded-2xl focus:outline-none focus:ring-4 focus:ring-primary-600/5 focus:border-primary-600 focus:bg-white transition-all font-bold text-gray-900">
+                                    </div>
+                                    @error('phone') <p class="text-xs text-red-500 font-bold mt-1 ml-1">{{ $message }}</p> @enderror
+                                </div>
+
+                                <div class="space-y-1.5">
+                                    <label class="text-xs font-black text-gray-400 uppercase tracking-[0.2em] ml-1">Email Address</label>
+                                    <div class="relative group">
+                                        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary-600 transition-colors"><i class="fas fa-envelope"></i></span>
+                                        <input type="email" name="email" placeholder="john@example.com" value="{{ old('email') }}" required class="w-full pl-12 pr-4 py-4 bg-gray-50 border @error('email') border-red-500 @else border-gray-100 @enderror rounded-2xl focus:outline-none focus:ring-4 focus:ring-primary-600/5 focus:border-primary-600 focus:bg-white transition-all font-bold text-gray-900">
+                                    </div>
+                                    @error('email') <p class="text-xs text-red-500 font-bold mt-1 ml-1">{{ $message }}</p> @enderror
+                                </div>
+
+                                <div class="space-y-1.5">
+                                    <label class="text-xs font-black text-gray-400 uppercase tracking-[0.2em] ml-1">Subject</label>
+                                    <div class="relative group">
+                                        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary-600 transition-colors"><i class="fas fa-tag"></i></span>
+                                        <input type="text" name="subject" placeholder="AC Installation" value="{{ old('subject') }}" required class="w-full pl-12 pr-4 py-4 bg-gray-50 border @error('subject') border-red-500 @else border-gray-100 @enderror rounded-2xl focus:outline-none focus:ring-4 focus:ring-primary-600/5 focus:border-primary-600 focus:bg-white transition-all font-bold text-gray-900">
+                                    </div>
+                                    @error('subject') <p class="text-xs text-red-500 font-bold mt-1 ml-1">{{ $message }}</p> @enderror
+                                </div>
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <label class="text-xs font-black text-gray-400 uppercase tracking-[0.2em] ml-1">Detailed Message</label>
+                                <textarea name="message" placeholder="Tell us more about your project needs..." required class="w-full p-4 bg-gray-50 border @error('message') border-red-500 @else border-gray-100 @enderror rounded-2xl focus:outline-none focus:ring-4 focus:ring-primary-600/5 focus:border-primary-600 focus:bg-white transition-all font-bold text-gray-900 min-h-[160px]">{{ old('message') }}</textarea>
+                                @error('message') <p class="text-xs text-red-500 font-bold mt-1 ml-1">{{ $message }}</p> @enderror
+                            </div>
+
+                            <div class="p-6 bg-primary-50 rounded-2xl border border-primary-100 flex flex-col md:flex-row items-center justify-between gap-6">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-primary-600 font-black text-xl border border-primary-100">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-black text-gray-900 uppercase tracking-tight">Spam Protection</p>
+                                        <p class="text-xs text-gray-500 font-bold">What is {{ $n1 }} + {{ $n2 }}?</p>
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-32">
+                                    <input type="number" name="captcha_answer" placeholder="Result" required class="w-full px-4 py-3 bg-white border @error('captcha_answer') border-red-500 @else border-primary-200 @enderror rounded-xl focus:outline-none focus:ring-4 focus:ring-primary-600/10 focus:border-primary-600 transition-all font-black text-center text-gray-900">
+                                    @error('captcha_answer') <p class="text-[10px] text-red-500 font-bold mt-1">{{ $message }}</p> @enderror
+                                </div>
+                            </div>
+
+                            <button type="submit" class="group w-full inline-flex items-center justify-center px-10 py-5 bg-primary-600 text-white text-lg font-black uppercase tracking-widest rounded-2xl shadow-2xl shadow-primary-600/30 hover:bg-primary-700 hover:-translate-y-1 active:scale-95 transition-all duration-300">
+                                Send Message <i class="fas fa-paper-plane ml-3 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -145,7 +177,7 @@
     </section>
 
     <section id="map" class="w-full">
-        <div class="h-96 w-full">
+        <div class="h-[450px] w-full grayscale hover:grayscale-0 transition-all duration-1000">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15849.569427329977!2d39.20520288233379!3d-6.762193560706857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4fc97e3c1585%3A0xc66513470659837a!2sMwenge%2C%20Dar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1700741234567!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>

@@ -7,60 +7,115 @@
     <section id="home" class="relative pt-20" x-data="{
         activeSlide: 0,
         slides: [
-            { image: '{{ asset('images/gbs-images/gbs-trusted-company-limited-1.jpeg') }}', title: 'Guaranteed Comfort Everywhere.', subtitle: 'Expert solutions in AC, Electrical, and Plumbing services since 2019.' },
-            { image: '{{ asset('images/gbs-images/gbs-trusted-company-limited-10.jpeg') }}', title: 'Professional Infrastructure Projects.', subtitle: 'Comprehensive technical services for properties and commercial hubs.' },
-            { image: '{{ asset('images/gbs-images/gbs-trusted-company-limited-15.jpeg') }}', title: 'Expert Technical Solutions 24/7.', subtitle: 'Our skilled technicians are ready to handle your most critical needs.' }
+            {
+                image: '{{ asset('images/gbs-images/gbs-trusted-company-limited-5.jpeg') }}',
+                tag: 'Engineering Excellence',
+                title: 'Guaranteed Comfort Everywhere.',
+                subtitle: 'Precision AC, Electrical, and Plumbing solutions since 2019.'
+            },
+            {
+                image: '{{ asset('images/gbs-images/gbs-trusted-company-limited-22.jpeg') }}',
+                tag: 'Technical Innovation',
+                title: 'Professional Infrastructure Projects.',
+                subtitle: 'Comprehensive technical services for premium properties and commercial hubs.'
+            },
+            {
+                image: '{{ asset('images/gbs-images/gbs-trusted-company-limited-15.jpeg') }}',
+                tag: '24/7 Expert Support',
+                title: 'Expert Technical Solutions.',
+                subtitle: 'Our skilled technicians are ready to handle your most critical engineering needs.'
+            },
+            {
+                image: '{{ asset('images/gbs-images/gbs-trusted-company-limited-20.jpeg') }}',
+                tag: 'Sustainable Energy',
+                title: 'Solar & Power Solutions.',
+                subtitle: 'Harness the power of the sun with our expert solar installations and power management.'
+            },
+            {
+                image: '{{ asset('images/gbs-images/gbs-trusted-company-limited-25.jpeg') }}',
+                tag: 'Safety & Security',
+                title: 'Advanced Security Systems.',
+                subtitle: 'Protecting what matters most with professional CCTV and electric fencing.'
+            }
         ],
         next() { this.activeSlide = (this.activeSlide + 1) % this.slides.length },
         prev() { this.activeSlide = (this.activeSlide - 1 + this.slides.length) % this.slides.length },
-        init() { setInterval(() => this.next(), 5000) }
+        init() { setInterval(() => this.next(), 7000) }
     }">
-        <div class="relative h-[70vh] md:h-[85vh] overflow-hidden">
+        <div class="relative h-[60vh] md:h-[70vh] lg:h-[80vh] max-h-[900px] overflow-hidden">
             <template x-for="(slide, index) in slides" :key="index">
                 <div x-show="activeSlide === index"
                      x-transition:enter="transition ease-out duration-1000"
-                     x-transition:enter-start="opacity-0 transform scale-105"
-                     x-transition:enter-end="opacity-100 transform scale-100"
+                     x-transition:enter-start="opacity-0 scale-110"
+                     x-transition:enter-end="opacity-100 scale-100"
                      x-transition:leave="transition ease-in duration-1000"
-                     x-transition:leave-start="opacity-100 transform scale-100"
-                     x-transition:leave-end="opacity-0 transform scale-105"
+                     x-transition:leave-start="opacity-100 scale-100"
+                     x-transition:leave-end="opacity-0 scale-110"
                      class="absolute inset-0 bg-cover bg-center flex items-center"
                      :style="`background-image: url('${slide.image}');`"
                 >
-                    <div class="absolute inset-0 bg-black/50"></div>
+                    <!-- Gradient Overlay -->
+                    <div class="absolute inset-0 bg-linear-to-r from-gray-900/90 via-gray-900/50 to-transparent"></div>
+
                     <div class="container mx-auto px-4 sm:px-6 lg:px-8 z-10 text-white">
                         <div class="max-w-4xl">
-                            <p class="text-lg font-semibold text-primary-300 mb-2 uppercase tracking-wider">OUR SLOGAN: Guaranteed Comfort</p>
-                            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4" x-text="slide.title"></h1>
-                            <p class="text-xl opacity-90 mb-8 max-w-2xl" x-text="slide.subtitle"></p>
-                            <div class="flex flex-wrap gap-4">
-                                <a href="#projects" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-lg text-white bg-primary-600 hover:bg-primary-700 transition duration-300">
-                                    Learn More <i class="fas fa-angle-double-right ml-2"></i>
-                                </a>
-                                <a href="{{route('contacts')}}" class="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-lg shadow-lg text-white hover:bg-white hover:text-gray-900 transition duration-300">
-                                    Contact Us
-                                </a>
+                            <div x-show="activeSlide === index"
+                                 x-transition:enter="transition ease-out delay-300 duration-700"
+                                 x-transition:enter-start="opacity-0 translate-y-8"
+                                 x-transition:enter-end="opacity-100 translate-y-0"
+                            >
+                                <span class="inline-block px-4 py-1.5 mb-6 text-xs font-black tracking-widest text-white uppercase bg-primary-600 rounded-full" x-text="slide.tag"></span>
+                                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.05] mb-6 tracking-tighter" x-text="slide.title"></h1>
+                                <p class="text-lg md:text-xl opacity-90 mb-10 max-w-2xl font-medium leading-relaxed" x-text="slide.subtitle"></p>
+
+                                <div class="flex flex-wrap gap-5">
+                                    <a href="#projects" class="group inline-flex items-center px-8 py-4 bg-primary-600 text-white font-black uppercase tracking-widest rounded-2xl shadow-2xl shadow-primary-500/30 hover:bg-primary-700 hover:-translate-y-1 transition-all duration-300">
+                                        Explore Projects <i class="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </template>
 
-            <!-- Slider Controls -->
-            <button @click="prev()" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/20 hover:bg-white/40 text-white transition">
-                <i class="fas fa-chevron-left text-2xl"></i>
-            </button>
-            <button @click="next()" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/20 hover:bg-white/40 text-white transition">
-                <i class="fas fa-chevron-right text-2xl"></i>
-            </button>
+            <!-- Slider Navigation Controls -->
+            <div class="absolute inset-y-0 left-4 right-4 z-20 flex items-center justify-between pointer-events-none">
+                <button @click="prev()" class="pointer-events-auto p-4 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 text-white hover:bg-primary-600 hover:border-primary-600 transition-all duration-500 group">
+                    <i class="fas fa-chevron-left text-xl group-hover:-translate-x-1 transition-transform"></i>
+                </button>
+                <button @click="next()" class="pointer-events-auto p-4 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 text-white hover:bg-primary-600 hover:border-primary-600 transition-all duration-500 group">
+                    <i class="fas fa-chevron-right text-xl group-hover:translate-x-1 transition-transform"></i>
+                </button>
+            </div>
 
-            <!-- Slider Indicators -->
-            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
-                <template x-for="(slide, index) in slides" :key="index">
-                    <button @click="activeSlide = index"
-                            class="w-3 h-3 rounded-full transition-all duration-300"
-                            :class="activeSlide === index ? 'bg-primary-600 w-8' : 'bg-white/50 hover:bg-white'"></button>
-                </template>
+            <!-- Enhanced Slider Indicators -->
+            <div class="absolute bottom-12 left-0 right-0 z-20">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center gap-4">
+                        <template x-for="(slide, index) in slides" :key="index">
+                            <button @click="activeSlide = index"
+                                    class="relative h-1 bg-white/30 rounded-full transition-all duration-500 overflow-hidden"
+                                    :class="activeSlide === index ? 'w-24 bg-white/40' : 'w-12 hover:bg-white/50'">
+                                <div x-show="activeSlide === index"
+                                     class="absolute inset-y-0 left-0 bg-primary-500 transition-all duration-700"
+                                     style="width: 100%; transition-duration: 7000ms; transition-timing-function: linear;"
+                                     :style="activeSlide === index ? 'width: 100%' : 'width: 0%'"
+                                ></div>
+                            </button>
+                        </template>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <div class="absolute bottom-12 right-4 sm:right-6 lg:right-8 z-20 hidden md:block">
+                <div class="flex flex-col items-center gap-4">
+                    <span class="text-[10px] font-black uppercase tracking-[0.3em] text-white/50 vertical-text [writing-mode:vertical-lr]">Scroll Down</span>
+                    <div class="w-px h-16 bg-white/20 relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-1/2 bg-primary-500 animate-[scroll-line_2s_ease-in-out_infinite]"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -169,19 +224,19 @@
                             'icon' => 'fas fa-fan',
                             'title' => 'AC Installation',
                             'desc' => 'Professional AC installation for homes, industries, and commercial buildings.',
-                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-30.jpeg')
+                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-35.jpeg')
                         ],
                         [
                             'icon' => 'fas fa-bolt',
                             'title' => 'Electrical Services',
                             'desc' => 'Qualified technicians for design, installation, and maintenance of all electrical systems.',
-                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-35.jpeg')
+                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-7.jpeg')
                         ],
                         [
                             'icon' => 'fas fa-wrench',
                             'title' => 'Plumbing Services',
                             'desc' => 'Certified plumbers for residential, commercial, and industrial areas.',
-                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-40.jpeg')
+                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-30.jpeg')
                         ],
                         [
                             'icon' => 'fas fa-video',
@@ -199,7 +254,7 @@
                             'icon' => 'fas fa-shield-alt',
                             'title' => 'Electric Fencing',
                             'desc' => 'Strong perimeter security barriers with high-voltage pulses for durable protection.',
-                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-55.jpeg')
+                            'image' => asset('images/gbs-images/gbs-trusted-company-limited-5.jpeg')
                         ],
                     ];
                 @endphp
