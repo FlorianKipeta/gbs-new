@@ -7,7 +7,7 @@
     <meta name="description" content="{{ $description ?? 'GBS Trusted Company Limited - Professional Air Conditioning, Plumbing, Electrical Wiring, CCTV Installation, and Electric Fencing services in Dar es Salaam and across Tanzania.' }}">
     <meta name="keywords" content="{{ $keywords ?? 'Air Conditioning Tanzania, Plumbing services Tanzania, Electrical wiring Dar es Salaam, CCTV installation Tanzania, GBS Trusted Company, AC maintenance Tanzania, AC repair Tanzania, HVAC services' }}">
     <title>{{ $title ??  'GBS Trusted Company Limited - Air Conditioning, Electrical & Plumbing Services'}}</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/gbs-logo.jpg') }}">
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     @vite('resources/css/app.css')
